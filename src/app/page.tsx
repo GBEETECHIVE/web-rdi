@@ -1,7 +1,13 @@
-import Image from "next/image";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import Index from "./index/page";
 
 export default function Home() {
   return (
- <h2>rdi project</h2>
+    <>
+      <Header />
+      <Index/>
+      <Footer />
+    </>
   );
 }

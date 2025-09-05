@@ -1,0 +1,89 @@
+"use client";
+
+import Image from "next/image";
+import { useEffect, useState } from "react";
+
+const logos = [
+  "/images/p1.png", "/images/p2.png", "/images/p3.png", "/images/p4.png",
+  "/images/p5.png", "/images/p6.png", "/images/p7.png", "/images/p8.png",
+  "/images/p9.png", "/images/p10.png", "/images/p11.png", "/images/p12.png",
+  "/images/p13.png", "/images/p14.png", "/images/p15.png", "/images/p16.png",
+  "/images/p17.png", "/images/p18.png", "/images/p19.png", "/images/p20.png",
+];
+
+export default function PartnerLogoSlider() {
+  const [visibleCount, setVisibleCount] = useState(10);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Update visibleCount based on screen size
+  useEffect(() => {
+    const updateVisibleCount = () => {
+      const width = window.innerWidth;
+      if (width < 768) {
+        setVisibleCount(2);
+      } else if (width < 1024) {
+        setVisibleCount(6);
+      } else {
+        setVisibleCount(10);
+      }
+    };
+
+    updateVisibleCount();
+    window.addEventListener("resize", updateVisibleCount);
+    return () => window.removeEventListener("resize", updateVisibleCount);
+  }, []);
+
+  // Autoplay sliding 1 logo at a time
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % logos.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
+  // Repeat logos to enable seamless loop
+  const extendedLogos = [...logos, ...logos.slice(0, visibleCount)];
+
+  // Slide width as percentage
+  const slideWidthPercent = 100 / visibleCount;
+
+  return (
+    <section className="py-12 px-4 overflow-hidden">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-2xl sm:text-3xl font-bold text-center mb-10 text-gray-800 tracking-wide uppercase">
+          Our Partner Organizations
+        </h2>
+
+        <div className="relative w-full overflow-hidden">
+          <div
+            className="flex transition-transform duration-700 ease-in-out"
+            style={{
+              width: `${(extendedLogos.length * 100) / visibleCount}%`,
+              transform: `translateX(-${currentIndex * slideWidthPercent}%)`,
+            }}
+          >
+            {extendedLogos.map((logo, index) => (
+              <div
+                key={index}
+                className="flex justify-center items-center p-4"
+                style={{
+                  width: `${slideWidthPercent}%`,
+                }}
+              >
+                <div className="w-full max-w-[120px] h-24 sm:h-28 flex items-center justify-center">
+                  <Image
+                    src={logo}
+                    alt={`Logo ${index + 1}`}
+                    width={100}
+                    height={60}
+                    className="object-contain w-full h-full"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
