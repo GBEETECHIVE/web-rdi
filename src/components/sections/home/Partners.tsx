@@ -50,8 +50,8 @@ export default function PartnerLogoSlider() {
   return (
     <section className="py-12 px-4 overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-2xl sm:text-3xl font-bold text-center mb-10 text-gray-800 tracking-wide uppercase">
-          Our Partner Organizations
+       <h2 className="text-4xl md:text-5xl text-center font-bold text-blue-900 mb-6 leading-tight uppercase">
+         Our Partner Organizations
         </h2>
 
         <div className="relative w-full overflow-hidden">
