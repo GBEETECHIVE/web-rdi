@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Index from "./index/page";

@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import Contribute from "@/components/sections/home/Contribute";
 import Counter from "@/components/sections/home/Counter";
 import HeroCarousel from "@/components/sections/home/HeroCarousel";
