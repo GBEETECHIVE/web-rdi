@@ -4,16 +4,19 @@ import Image from "next/image";
 
 const events = [
   {
-    title: "Center of Excellence for ECD",
-    image: "/images/news-1.png",
+    title: "RDI at AVPN Conference 2025: Strengthening Impact Across Asia",
+    image: "/images/avpn.png",
+    isNew: true,
   },
   {
     title: "Investment Roadshow–USA",
     image: "/images/news-2.png",
+    isNew: false,
   },
   {
     title: "Rupani Academy MYP",
     image: "/images/news-3.png",
+    isNew: false,
   },
 ];
 
@@ -28,8 +31,9 @@ export default function KeyEvents() {
           {events.map((event, index) => (
             <div
               key={index}
-              className="bg-white rounded-md shadow-md overflow-hidden transition-transform duration-300 transform hover:scale-105"
+              className="bg-white rounded-md shadow-md overflow-hidden transition-transform duration-300 transform hover:scale-105 relative"
             >
+              {/* Image */}
               <div className="relative w-full h-80 bg-black">
                 <Image
                   src={event.image}
@@ -37,7 +41,16 @@ export default function KeyEvents() {
                   fill
                   className="object-cover"
                 />
+
+                {/* NEW badge (top-left corner) */}
+                {event.isNew && (
+                  <div className="absolute top-0 left-0 bg-red-600 text-white text-xs font-bold px-3 py-1">
+                    NEW
+                  </div>
+                )}
               </div>
+
+              {/* Content */}
               <div className="flex flex-col items-center justify-center gap-2 p-4 text-center">
                 <h3 className="text-lg font-medium text-gray-800">
                   {event.title}

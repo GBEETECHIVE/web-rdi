@@ -1,183 +1,133 @@
 "use client";
 
+import Link from "next/link";
+
 export default function Footer() {
   return (
-    <footer className="bg-gray-100">
-      <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Top Section */}
-        <div className="grid grid-cols-2 gap-8 py-8 md:grid-cols-3">
+    <footer className="bg-gray-100 text-gray-700">
+      <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        {/* Grid Layout: Sections */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mb-12">
+          {/* What We Do */}
           <div>
-            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-              What we do
-            </h2>
-            <ul className="text-gray-500 dark:text-gray-400 font-medium space-y-4">
-              <li>
-                <a
-                  href="#"
-                  className="border-b-2 border-transparent pb-0.5 hover:text-[#0077f2] hover:border-b-[#0077f2] transition"
-                >
-                  Education
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="border-b-2 border-transparent pb-0.5 hover:text-[#0077f2] hover:border-b-[#0077f2] transition"
-                >
-                  Who we are
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="border-b-2 border-transparent pb-0.5 hover:text-[#0077f2] hover:border-b-[#0077f2] transition"
-                >
-                  What we do
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="border-b-2 border-transparent pb-0.5 hover:text-[#0077f2] hover:border-b-[#0077f2] transition"
-                >
-                  Rupani Initiatives
-                </a>
-              </li>
+            <h3 className="text-sm font-bold text-gray-800 uppercase mb-4">What we do</h3>
+            <ul className="space-y-3">
+              {["Education", "Who we are", "Rupani Initiatives"].map((item, i) => (
+                <li key={i}>
+                  <Link href="#" className="hover:text-[#0077f2] transition-colors">
+                    {item}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
+
+          {/* Volunteers */}
           <div>
-            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-              Volunteers
-            </h2>
-            <ul className="text-gray-500 dark:text-gray-400 font-medium space-y-4">
-              <li>
-                <a
-                  href="#"
-                  className="border-b-2 border-transparent pb-0.5 hover:text-[#0077f2] hover:border-b-[#0077f2] transition"
-                >
-                  Be a volunteer
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="border-b-2 border-transparent pb-0.5 hover:text-[#0077f2] hover:border-b-[#0077f2] transition"
-                >
-                  Volunteer List
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="border-b-2 border-transparent pb-0.5 hover:text-[#0077f2] hover:border-b-[#0077f2] transition"
-                >
-                  FAQ
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="border-b-2 border-transparent pb-0.5 hover:text-[#0077f2] hover:border-b-[#0077f2] transition"
-                >
-                  Terms of use
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="border-b-2 border-transparent pb-0.5 hover:text-[#0077f2] hover:border-b-[#0077f2] transition"
-                >
-                  Privacy policy
-                </a>
-              </li>
+            <h3 className="text-sm font-bold text-gray-800 uppercase mb-4">Volunteers</h3>
+            <ul className="space-y-3">
+              {["Be a volunteer", "Volunteer List", "FAQ", "Terms of use", "Privacy policy"].map((item, i) => (
+                <li key={i}>
+                  <Link href="#" className="hover:text-[#0077f2] transition-colors">
+                    {item}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
+
+          {/* Send Email + Follow Us stacked */}
           <div>
-            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-              Contact Us
-            </h2>
-            <ul className="text-gray-500 dark:text-gray-400 font-medium space-y-4">
+            <h3 className="text-sm font-bold text-gray-800 uppercase mb-4">Send Email</h3>
+            <ul className="space-y-3 mb-8">
               <li>
-                <span> USA OFFICE: </span>
-                <a
-                  href="#"
-                  className="border-b-2 border-transparent pb-0.5 hover:text-[#0077f2] hover:border-b-[#0077f2] transition"
-                >
-                  8303 Southwest Freeway # 440, Houston, TX 77074 USA
-                </a>
-              </li>
-              <li>
-                <span> US Contact Number: </span>
-                <a
-                  href="#"
-                  className="border-b-2 border-transparent pb-0.5 hover:text-[#0077f2] hover:border-b-[#0077f2] transition"
-                >
-                  +1 (713)-777-5059
-                </a>
-              </li>
-              <li>
-                <span>PAKISTAN OFFICE:</span>
-                <a
-                  href="#"
-                  className="border-b-2 border-transparent pb-0.5 hover:text-[#0077f2] hover:border-b-[#0077f2] transition"
-                >
-                  Brig. Sher ullah Baig Road, Jutial Gilgit, Gilgit-Baltistan,
-                  Pakistan PAK: +92 5811-551855
-                </a>
-              </li>
-              <li>
-                <span> Email:</span>
-                <a
-                  href="#"
-                  className="border-b-2 border-transparent pb-0.5 hover:text-[#0077f2] hover:border-b-[#0077f2] transition"
-                >
+                <Link href="mailto:connect@rdi.world" className="hover:text-[#0077f2] transition-colors">
                   connect@rdi.world
-                </a>
+                </Link>
               </li>
             </ul>
+
+            {/* Follow Us */}
+            <div>
+              <h3 className="text-sm font-bold text-gray-800 uppercase mb-4">Follow Us</h3>
+              <div className="flex space-x-5 mt-1">
+                {[
+                  {
+                    href: "#",
+                    label: "Facebook",
+                    icon: "/fonts/icons/facebook.svg",
+                  },
+                  {
+                    href: "#",
+                    label: "Instagram",
+                    icon: "/fonts/icons/instagram.svg",
+                  },
+                  {
+                    href: "https://www.linkedin.com/company/rdiworld/posts/?feedView=all",
+                    label: "LinkedIn",
+                    icon: "/fonts/icons/linkedin.svg",
+                  },
+                  {
+                    href: "#",
+                    label: "YouTube",
+                    icon: "/fonts/icons/youtube.svg",
+                  },
+                ].map(({ href, label, icon }) => (
+                  <Link
+                    key={label}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={label}
+                    className="hover:text-[#0077f2] transition"
+                  >
+                    <img src={icon} alt={label} className="w-6 h-6" />
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Contact Us Section */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mb-12">
+          {/* USA Office */}
+          <div>
+            <h3 className="text-sm font-bold text-gray-800 uppercase mb-2">USA OFFICE</h3>
+            <p className="hover:text-[#0077f2] transition-colors">
+              8303 Southwest Freeway # 440, Houston, TX 77074 USA
+            </p>
+            <p className="mt-2 hover:text-[#0077f2] transition-colors">+1 (713)-777-5059</p>
+          </div>
+
+          {/* Pakistan Office */}
+          <div>
+            <h3 className="text-sm font-bold text-gray-800 uppercase mb-2">PAKISTAN OFFICE</h3>
+            <p className="hover:text-[#0077f2] transition-colors">
+              Brig. Sher ullah Baig Road, Jutial Gilgit, Gilgit-Baltistan, Pakistan
+            </p>
+            <p className="mt-2 hover:text-[#0077f2] transition-colors">+92 5811-551855</p>
+          </div>
+
+          {/* Afghanistan Office */}
+          <div>
+            <h3 className="text-sm font-bold text-gray-800 uppercase mb-2">AFGHANISTAN OFFICE</h3>
+            <p className="hover:text-[#0077f2] transition-colors">
+              House #13, Street #5, Qilla-e-Fatullah, Kabul, Afghanistan
+            </p>
+            <p className="mt-2 hover:text-[#0077f2] transition-colors">+93 796 291 322</p>
           </div>
         </div>
 
         {/* Bottom Section */}
-        <div className="flex flex-col-reverse md:flex-row md:items-center md:justify-between border-t border-gray-200 dark:border-gray-700 py-6">
-          <span className="text-sm text-gray-500 dark:text-gray-300 text-center md:text-left mt-4 md:mt-0">
+        <div className="border-t border-gray-300 pt-6">
+          <span className="block text-sm text-gray-600 text-center">
             © 2025{" "}
-            <a href="https://yourdomain.com" className="hover:underline">
+            <Link href="https://yourdomain.com" className="hover:text-[#0077f2] transition-colors">
               Rupani Development Initiatives
-            </a>
+            </Link>
             . All rights reserved.
           </span>
-
-          {/* Social Icons */}
-          <div className="flex justify-center space-x-6">
-            {[
-              {
-                href: "#",
-                label: "Facebook",
-                icon: "/fonts/icons/facebook.svg",
-              },
-              {
-                href: "#",
-                label: "Instagram",
-                icon: "/fonts/icons/instagram.svg",
-              },
-              {
-                href: "#",
-                label: "LinkedIn",
-                icon: "/fonts/icons/linkedin.svg",
-              },
-              { href: "#", label: "YouTube", icon: "/fonts/icons/youtube.svg" },
-            ].map(({ href, label, icon }) => (
-              <a
-                key={label}
-                href={href}
-                className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
-                aria-label={label}
-              >
-                <img src={icon} alt={label} className="w-5 h-5" />
-              </a>
-            ))}
-          </div>
         </div>
       </div>
     </footer>

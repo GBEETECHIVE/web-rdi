@@ -4,11 +4,26 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const logos = [
-  "/images/p1.png", "/images/p2.png", "/images/p3.png", "/images/p4.png",
-  "/images/p5.png", "/images/p6.png", "/images/p7.png", "/images/p8.png",
-  "/images/p9.png", "/images/p10.png", "/images/p11.png", "/images/p12.png",
-  "/images/p13.png", "/images/p14.png", "/images/p15.png", "/images/p16.png",
-  "/images/p17.png", "/images/p18.png", "/images/p19.png", "/images/p20.png",
+  "/images/p1.png",
+  "/images/p2.png",
+  "/images/p3.png",
+  "/images/p4.png",
+  "/images/p5.png",
+  "/images/p6.png",
+  "/images/p7.png",
+  "/images/p8.png",
+  "/images/p9.png",
+  "/images/p10.png",
+  "/images/p11.png",
+  "/images/p12.png",
+  "/images/p13.png",
+  "/images/p14.png",
+  "/images/p15.png",
+  "/images/p16.png",
+  "/images/p17.png",
+  "/images/p18.png",
+  "/images/p19.png",
+  "/images/p20.png",
 ];
 
 export default function PartnerLogoSlider() {
@@ -33,7 +48,7 @@ export default function PartnerLogoSlider() {
     return () => window.removeEventListener("resize", updateVisibleCount);
   }, []);
 
-  // Autoplay sliding 1 logo at a time
+  // Autoplay sliding every 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % logos.length);
@@ -41,28 +56,32 @@ export default function PartnerLogoSlider() {
     return () => clearInterval(interval);
   }, []);
 
-  // Repeat logos to enable seamless loop
-  const extendedLogos = [...logos, ...logos.slice(0, visibleCount)];
+  // Calculate visible logos for current slide window
+  const getVisibleLogos = () => {
+    return Array.from({ length: visibleCount }, (_, i) => {
+      const index = (currentIndex + i) % logos.length;
+      return logos[index];
+    });
+  };
 
-  // Slide width as percentage
   const slideWidthPercent = 100 / visibleCount;
 
   return (
     <section className="py-12 px-4 overflow-hidden">
       <div className="max-w-7xl mx-auto">
-       <h2 className="text-4xl md:text-5xl text-center font-bold text-blue-900 mb-6 leading-tight uppercase">
-         Our Partner Organizations
+        <h2 className="text-4xl md:text-5xl text-center font-bold text-blue-900 mb-6 leading-tight">
+          Our Partner Organizations
         </h2>
 
         <div className="relative w-full overflow-hidden">
           <div
             className="flex transition-transform duration-700 ease-in-out"
             style={{
-              width: `${(extendedLogos.length * 100) / visibleCount}%`,
-              transform: `translateX(-${currentIndex * slideWidthPercent}%)`,
+              width: "100%",
+              // No transform needed here because we are rendering only visible logos
             }}
           >
-            {extendedLogos.map((logo, index) => (
+            {getVisibleLogos().map((logo, index) => (
               <div
                 key={index}
                 className="flex justify-center items-center p-4"

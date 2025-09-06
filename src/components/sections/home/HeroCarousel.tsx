@@ -12,16 +12,22 @@ const slides = [
   },
   {
     image: "/images/header-2.png",
-    heading: "Educating for a Better Tomorrow",
-    subheading: "Empowering Through Knowledge",
+    heading: "Early Childhood Development",
+    subheading: "Building Strong Foundations for Every Child",
     caption: "Education is the passport to the future.",
   },
   {
     image: "/images/header-1.png",
-    heading: "Sustainable Livelihoods",
-    subheading: "Changing Lives Through Skills",
-    caption: "Empowerment begins with opportunity.",
+    heading: "Climate Resilience",
+    subheading: "Our Impact at a Glance-Subtext",
+    caption: "Prepared communities. Protected futures.",
   },
+    {
+    image: "/images/header-2.png",
+    heading: "Education & Digital Futures",
+    subheading: "Bridging the Digital Divide in Afghanistan",
+    caption: "Empowering minds through digital inclusion.",
+  }
 ];
 
 export default function HeroCarousel() {

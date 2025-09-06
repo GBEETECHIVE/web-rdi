@@ -10,10 +10,9 @@ const navItems = [
   {
     label: "About Us",
     children: [
-      { href: "/who-we-are", label: "Who We Are" },
-      { href: "/where-we-work", label: "Where We Work" },
-      { href: "/what-we-do", label: "What We Do" },
-      { href: "/downloads", label: "Downloads" },
+      { href: "/about-us/who-we-are", label: "Who We Are" },
+      { href: "/about-us/what-we-do", label: "What We Do" },
+      { href: "/about-us/downloads", label: "Downloads" },
     ],
   },
   { href: "/rupani-initiatives", label: "RDI Initiatives" },
@@ -24,15 +23,12 @@ const navItems = [
 export default function Header() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [mobileDropdownOpen, setMobileDropdownOpen] = useState<string | null>(
-    null
-  );
+  const [mobileDropdownOpen, setMobileDropdownOpen] = useState<string | null>(null);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   return (
     <nav className="bg-white border-b border-gray-200 dark:bg-gray-900 dark:border-gray-700 z-50 relative">
       <div className="max-w-screen-xl mx-auto flex items-center justify-between px-2 py-4">
-        {/* Logo */}
         <Link href="/" className="flex items-center flex-shrink-0">
           <Image
             src="/logo.png"
@@ -106,18 +102,23 @@ export default function Header() {
           })}
         </ul>
 
-        {/* Right Side: Button and Mobile Menu Toggle */}
+        {/* Right Side: Volunteer Button and Mobile Toggle */}
         <div className="flex items-center space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <button
-            type="button"
+          {/* ✅ Volunteer Button */}
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeagCrGF_wCuabJNupF9RR9Hb7i1kOQBC2ydPc38C0S2bFRBg/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden md:inline-block text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-800"
           >
             Become a Volunteer
-          </button>
+          </a>
+
+          {/* ✅ Mobile Toggle: Show only on ≤768px */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
             type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            className="inline-flex md:hidden items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-cta"
             aria-expanded={mobileOpen}
           >
