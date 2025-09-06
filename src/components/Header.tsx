@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const navItems = [
   { href: "/", label: "Home" },
@@ -28,8 +28,21 @@ export default function Header() {
   );
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
+  // 🔥 shadow toggle when scrolling
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 10);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="bg-white border-b border-gray-200 dark:bg-gray-900 dark:border-gray-700 z-50 relative">
+    <nav
+      className={`sticky top-0 z-50 bg-white border-b border-gray-200 dark:bg-gray-900 dark:border-gray-700 transition-shadow duration-300 ${
+        scrolled ? "shadow-md" : ""
+      }`}
+    >
       <div className="max-w-screen-xl mx-auto flex items-center justify-between px-2 py-4">
         <Link href="/" className="flex items-center flex-shrink-0">
           <Image
@@ -55,7 +68,7 @@ export default function Header() {
                   onMouseLeave={() => setOpenDropdown(null)}
                 >
                   <span
-                    className="cursor-pointer px-2 py-1 inline-block border-b-2 border-transparent transition duration-300 transform
+                    className="cursor-pointer px-2 py-1 inline-block border-b-2 border-transparent transition duration-300
                       text-gray-900 dark:text-white hover:text-[#0077f2] hover:border-b-[#0077f2]"
                   >
                     {label}
@@ -89,7 +102,7 @@ export default function Header() {
               <li key={href}>
                 <Link
                   href={href}
-                  className={`px-2 py-1 inline-block border-b-2 border-transparent transition duration-300 transform
+                  className={`px-2 py-1 inline-block border-b-2 border-transparent transition duration-300
                     ${
                       isActive
                         ? "border-b-[#0077f2] text-[#0077f2] font-semibold"
@@ -104,9 +117,9 @@ export default function Header() {
           })}
         </ul>
 
-        {/* Right Side: Volunteer Button and Mobile Toggle */}
+        {/* Right Side */}
         <div className="flex items-center space-x-3 md:space-x-0 rtl:space-x-reverse">
-          {/* ✅ Volunteer Button */}
+          {/* Volunteer Button */}
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSeagCrGF_wCuabJNupF9RR9Hb7i1kOQBC2ydPc38C0S2bFRBg/viewform"
             target="_blank"
@@ -116,7 +129,7 @@ export default function Header() {
             Become a Volunteer
           </a>
 
-          {/* ✅ Mobile Toggle: Show only on ≤768px */}
+          {/* Mobile Toggle */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
             type="button"
@@ -166,7 +179,6 @@ export default function Header() {
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
                           strokeLinecap="round"
