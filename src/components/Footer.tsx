@@ -88,34 +88,45 @@ export default function Footer() {
             </div>
           </div>
         </div>
-
         {/* Contact Us Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mb-12">
           {/* USA Office */}
           <div>
             <h3 className="text-sm font-bold text-gray-800 uppercase mb-2">USA OFFICE</h3>
             <p className="hover:text-[#0077f2] transition-colors">
-              8303 Southwest Freeway # 440, Houston, TX 77074 USA
+              8303 Southwest Freeway, Suite 440, 
+Houston, TX 77074 USA
             </p>
-            <p className="mt-2 hover:text-[#0077f2] transition-colors">+1 (713)-777-5059</p>
+            <p className="mt-2 hover:text-[#0077f2] transition-colors">+1 713-777-5059</p>
           </div>
 
           {/* Pakistan Office */}
           <div>
             <h3 className="text-sm font-bold text-gray-800 uppercase mb-2">PAKISTAN OFFICE</h3>
             <p className="hover:text-[#0077f2] transition-colors">
-              Brig. Sher ullah Baig Road, Jutial Gilgit, Gilgit-Baltistan, Pakistan
+             Naveed Shaheed Road, Zulfiqarabad, 
+Gilgit, Gilgit-Baltistan, Pakistan
             </p>
-            <p className="mt-2 hover:text-[#0077f2] transition-colors">+92 5811-551855</p>
+            <p className="mt-2 hover:text-[#0077f2] transition-colors">+92-5811-459709</p>
           </div>
 
           {/* Afghanistan Office */}
           <div>
             <h3 className="text-sm font-bold text-gray-800 uppercase mb-2">AFGHANISTAN OFFICE</h3>
             <p className="hover:text-[#0077f2] transition-colors">
-              House #13, Street #5, Qilla-e-Fatullah, Kabul, Afghanistan
+              House #13, Street #5, Qilla-e-Fatullah, 
+Kabul, Afghanistan 
             </p>
-            <p className="mt-2 hover:text-[#0077f2] transition-colors">+93 796 291 322</p>
+            <p className="mt-2 hover:text-[#0077f2] transition-colors">+937-962-91322</p>
+          </div>
+          <div>
+            <h3 className="text-sm font-bold text-gray-800 uppercase mb-2">UAE OFFICE</h3>
+            <p className="hover:text-[#0077f2] transition-colors">
+              DD-14-116-012, WeWork - Hub71, 
+14 Floor, Al Khatem Tower, Adgm Square, 
+Al Maryah Island, Abu Dhabi, UAE
+            </p>
+            <p className="mt-2 hover:text-[#0077f2] transition-colors">+971-56940-3192</p>
           </div>
         </div>
 

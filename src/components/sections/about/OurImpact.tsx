@@ -4,9 +4,9 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 
 const images = [
-  "/images/news-1.png",
-  "/images/news-2.png",
-  "/images/news-3.png",
+  "/images/imp-1.jpeg",
+  "/images/imp-5.jpeg",
+  "/images/imp-3.jpeg",
 ];
 
 const duration = 3000; // autoplay duration (ms)

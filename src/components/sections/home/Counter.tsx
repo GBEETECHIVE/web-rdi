@@ -15,6 +15,7 @@ const stats: Stat[] = [
     icon: "/fonts/icons/tree-solid-full.svg",
     number: 21_000_000,
     label: "Number of trees planted",
+    showPlus: true,
   },
   {
     icon: "/fonts/icons/children-solid-full.svg",
@@ -23,13 +24,13 @@ const stats: Stat[] = [
   },
   {
     icon: "/fonts/icons/hands-holding-child-solid-full.svg",
-    number: 38_000,
+    number: 1_000_000,
     label: "Livelihood supported",
     showPlus: true,
   },
   {
     icon: "/fonts/icons/women.svg",
-    number: 12_000,
+    number: 150_000,
     label: "Number of women trained",
     showPlus: true,
   },

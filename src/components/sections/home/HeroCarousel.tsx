@@ -17,13 +17,13 @@ const slides = [
     caption: "Education is the passport to the future.",
   },
   {
-    image: "/images/header-1.png",
+    image: "/images/climate-2.jpg",
     heading: "Climate Resilience",
     subheading: "Our Impact at a Glance-Subtext",
     caption: "Prepared communities. Protected futures.",
   },
     {
-    image: "/images/header-2.png",
+    image: "/images/slider-3.jpeg",
     heading: "Education & Digital Futures",
     subheading: "Bridging the Digital Divide in Afghanistan",
     caption: "Empowering minds through digital inclusion.",
