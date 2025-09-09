@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function RupaniInitiatives() {
   return (
@@ -12,7 +13,7 @@ export default function RupaniInitiatives() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-8">
             {/* Rupani Foundation */}
             <div className="p-6 rounded-lg shadow-md bg-gray-100">
-              <a
+              {/* <a
                 href="https://www.rupanifoundation.org/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -27,7 +28,19 @@ export default function RupaniInitiatives() {
                     className="object-contain"
                   />
                 </div>
-              </a>
+              </a> */}
+              <Link href="https://www.rupanifoundation.org/" className="flex items-center flex-shrink-0 mb-2">
+                <div className="relative w-28 h-10 sm:w-36 sm:h-12 md:w-44 md:h-14 lg:w-52 lg:h-16">
+                  <Image
+                    src="/logo.png"
+                    alt="Rupani Development Initiatives Logo"
+                    fill
+                    priority
+                    className="object-contain"
+                  />
+                </div>
+              </Link>
+
               <p className="text-gray-700 mb-6 leading-relaxed">
                 The Rupani Foundation stands as a catalyst for change, dedicated
                 to promoting sustainable and inclusive development in our target
@@ -48,7 +61,7 @@ export default function RupaniInitiatives() {
 
             {/* Apex & Co */}
             <div className="p-6 rounded-lg shadow-md bg-gray-100">
-              <a
+              {/* <a
                 href="https://www.apexnco.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -63,7 +76,18 @@ export default function RupaniInitiatives() {
                     className="object-contain"
                   />
                 </div>
-              </a>
+              </a> */}
+               <Link href="https://www.apexnco.com/" className="flex items-center flex-shrink-0 mb-2">
+                <div className="relative w-28 h-10 sm:w-36 sm:h-12 md:w-44 md:h-14 lg:w-52 lg:h-16">
+                  <Image
+                    src="/logo.png"
+                    alt="Rupani Development Initiatives Logo"
+                    fill
+                    priority
+                    className="object-contain"
+                  />
+                </div>
+              </Link>
               <p className="text-gray-700 mb-6 leading-relaxed">
                 Apex & Co, a pioneering impact investment firm, merges
                 innovation and social responsibility to tackle environmental and
