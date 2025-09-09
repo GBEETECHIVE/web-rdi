@@ -1,5 +1,3 @@
-'use client';
-
 export default function MissionVision() {
   return (
     <section className="bg-white py-16 px-4">

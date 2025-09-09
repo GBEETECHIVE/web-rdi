@@ -1,13 +1,8 @@
-export const dynamic = "force-dynamic";
-
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import Image from "next/image";
 
 export default function RupaniInitiatives() {
   return (
     <>
-      <Header />
       <section className="py-16 w-full">
         <div className="max-w-7xl mx-auto px-4">
           <h3 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6 leading-tight text-center">
@@ -23,7 +18,7 @@ export default function RupaniInitiatives() {
                 rel="noopener noreferrer"
                 className="block mb-4 p-4 hover:opacity-90 transition"
               >
-                <div className="flex items-center gap-4">
+                <div className="flex items-center">
                   <Image
                     src="/images/RfLogo.png"
                     alt="Rupani Foundation Logo"
@@ -90,7 +85,6 @@ export default function RupaniInitiatives() {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 }

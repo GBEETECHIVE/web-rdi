@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 
 export default function Footer() {
@@ -53,12 +51,12 @@ export default function Footer() {
               <div className="flex space-x-5 mt-1">
                 {[
                   {
-                    href: "#",
+                    href: "https://www.facebook.com/rdiworld",
                     label: "Facebook",
                     icon: "/fonts/icons/facebook.svg",
                   },
                   {
-                    href: "#",
+                    href: "https://www.instagram.com/rdi_world/",
                     label: "Instagram",
                     icon: "/fonts/icons/instagram.svg",
                   },
@@ -68,7 +66,7 @@ export default function Footer() {
                     icon: "/fonts/icons/linkedin.svg",
                   },
                   {
-                    href: "#",
+                    href: "https://www.youtube.com/@rdi_world",
                     label: "YouTube",
                     icon: "/fonts/icons/youtube.svg",
                   },
@@ -79,9 +77,8 @@ export default function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={label}
-                    className="hover:text-[#0077f2] transition"
                   >
-                    <img src={icon} alt={label} className="w-6 h-6" />
+                    <img src={icon} alt={label} className="w-9 h-9 rounded-full border-2 border-transparent hover:border-[#0077f2] transition hover:p-1" />
                   </Link>
                 ))}
               </div>

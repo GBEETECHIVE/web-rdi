@@ -1,5 +1,5 @@
 "use client";
-
+export const dynamic = "force-dynamic";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -44,20 +44,40 @@ export default function Header() {
       }`}
     >
       <div className="max-w-screen-xl mx-auto flex items-center justify-between px-2 py-4">
-        <Link href="/" className="flex items-center flex-shrink-0">
+        {/* <Link href="/" className="flex items-center flex-shrink-0">
           <Image
             src="/logo.png"
             alt="Rupani Development Initiatives Logo"
-            width={150}
-            height={50}
-            className="object-contain"
+            unoptimized
+            className="object-contain w-40 h-12"
           />
+        </Link> */}
+        <Link href="/" className="flex items-center flex-shrink-0">
+          <div className="relative w-28 h-10 sm:w-36 sm:h-12 md:w-44 md:h-14 lg:w-52 lg:h-16">
+            <Image
+              src="/logo.png"
+              alt="Rupani Development Initiatives Logo"
+              fill
+              priority
+              className="object-contain"
+            />
+          </div>
         </Link>
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex flex-1 justify-center space-x-6 font-medium relative">
           {navItems.map(({ href, label, children }) => {
-            const isActive = pathname === href;
+            let isActive = false;
+
+            if (href) {
+              // normal nav item
+              isActive = pathname === href;
+            } else if (children) {
+              // parent nav item (dropdown) → active if child path matches
+              isActive = children.some((child) =>
+                pathname.startsWith(child.href)
+              );
+            }
 
             if (children) {
               return (
@@ -68,31 +88,43 @@ export default function Header() {
                   onMouseLeave={() => setOpenDropdown(null)}
                 >
                   <span
-                    className="cursor-pointer px-2 py-1 inline-block border-b-2 border-transparent transition duration-300
-                      text-gray-900 dark:text-white hover:text-[#0077f2] hover:border-b-[#0077f2]"
+                    className={`cursor-pointer px-2 py-1 inline-block border-b-2 transition duration-300
+                      ${
+                        isActive
+                          ? "border-b-[#0077f2] text-[#0077f2] font-semibold"
+                          : "border-transparent text-gray-900 dark:text-white"
+                      }
+                      hover:text-[#0077f2] hover:border-b-[#0077f2]`}
                   >
                     {label}
                   </span>
 
                   {/* Dropdown */}
                   <ul
-                    className={`absolute left-0 top-full mt-2 w-48 z-50 bg-white dark:bg-gray-800 shadow-lg rounded-md py-2 transition-all duration-200 ease-in-out
+                    className={`absolute left-0 w-48 z-50 bg-white dark:bg-gray-800 shadow-lg rounded-md py-2 transition-all duration-200 ease-in-out
                       ${
                         openDropdown === label
                           ? "opacity-100 visible"
                           : "opacity-0 invisible pointer-events-none"
                       }`}
                   >
-                    {children.map(({ href: subHref, label: subLabel }) => (
-                      <li key={subHref}>
-                        <Link
-                          href={subHref}
-                          className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 transition"
-                        >
-                          {subLabel}
-                        </Link>
-                      </li>
-                    ))}
+                    {children.map(({ href: subHref, label: subLabel }) => {
+                      const isChildActive = pathname === subHref;
+                      return (
+                        <li key={subHref}>
+                          <Link
+                            href={subHref}
+                            className={`block px-4 py-2 text-sm transition ${
+                              isChildActive
+                                ? "text-[#0077f2] font-semibold bg-gray-100"
+                                : "text-gray-700 hover:bg-gray-100"
+                            }`}
+                          >
+                            {subLabel}
+                          </Link>
+                        </li>
+                      );
+                    })}
                   </ul>
                 </li>
               );
@@ -161,6 +193,16 @@ export default function Header() {
         <div className="md:hidden px-4 pb-4 z-50 relative" id="navbar-cta">
           <ul className="flex flex-col font-medium space-y-3">
             {navItems.map(({ href, label, children }) => {
+              let isActive = false;
+
+              if (href) {
+                isActive = pathname === href;
+              } else if (children) {
+                isActive = children.some((child) =>
+                  pathname.startsWith(child.href)
+                );
+              }
+
               if (children) {
                 const isOpen = mobileDropdownOpen === label;
                 return (
@@ -169,7 +211,12 @@ export default function Header() {
                       onClick={() =>
                         setMobileDropdownOpen(isOpen ? null : label)
                       }
-                      className="w-full flex justify-between items-center text-gray-900 dark:text-white mb-1 focus:outline-none"
+                      className={`w-full flex justify-between items-center mb-1 focus:outline-none transition
+                        ${
+                          isActive
+                            ? "text-[#0077f2] font-semibold"
+                            : "text-gray-900 dark:text-white"
+                        }`}
                     >
                       {label}
                       <svg
@@ -193,20 +240,27 @@ export default function Header() {
                         isOpen ? "max-h-96" : "max-h-0"
                       }`}
                     >
-                      {children.map(({ href: subHref, label: subLabel }) => (
-                        <li key={subHref}>
-                          <Link
-                            href={subHref}
-                            className="block text-gray-700 dark:text-gray-300 hover:text-[#0077f2] transition"
-                            onClick={() => {
-                              setMobileOpen(false);
-                              setMobileDropdownOpen(null);
-                            }}
-                          >
-                            {subLabel}
-                          </Link>
-                        </li>
-                      ))}
+                      {children.map(({ href: subHref, label: subLabel }) => {
+                        const isChildActive = pathname === subHref;
+                        return (
+                          <li key={subHref}>
+                            <Link
+                              href={subHref}
+                              className={`block transition ${
+                                isChildActive
+                                  ? "text-[#0077f2] font-semibold"
+                                  : "text-gray-700 dark:text-gray-300 hover:text-[#0077f2]"
+                              }`}
+                              onClick={() => {
+                                setMobileOpen(false);
+                                setMobileDropdownOpen(null);
+                              }}
+                            >
+                              {subLabel}
+                            </Link>
+                          </li>
+                        );
+                      })}
                     </ul>
                   </li>
                 );
@@ -216,7 +270,13 @@ export default function Header() {
                 <li key={href}>
                   <Link
                     href={href}
-                    className="block px-4 py-2 border-b-2 border-transparent transition duration-300 text-gray-900 dark:text-white hover:border-b-[#0077f2] hover:text-[#0077f2]"
+                    className={`block px-4 py-2 border-b-2 border-transparent transition duration-300
+                      ${
+                        isActive
+                          ? "border-b-[#0077f2] text-[#0077f2] font-semibold"
+                          : "text-gray-900 dark:text-white"
+                      }
+                      hover:border-b-[#0077f2] hover:text-[#0077f2]`}
                     onClick={() => {
                       setMobileOpen(false);
                       setMobileDropdownOpen(null);
