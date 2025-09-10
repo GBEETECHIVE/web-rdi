@@ -32,7 +32,7 @@ export default function RupaniInitiatives() {
               <Link href="https://www.rupanifoundation.org/" className="flex items-center flex-shrink-0 mb-2">
                 <div className="relative w-28 h-10 sm:w-36 sm:h-12 md:w-44 md:h-14 lg:w-52 lg:h-16">
                   <Image
-                    src="/logo.png"
+                    src="/images/RfLogo.png"
                     alt="Rupani Development Initiatives Logo"
                     fill
                     priority
@@ -80,7 +80,7 @@ export default function RupaniInitiatives() {
                <Link href="https://www.apexnco.com/" className="flex items-center flex-shrink-0 mb-2">
                 <div className="relative w-28 h-10 sm:w-36 sm:h-12 md:w-44 md:h-14 lg:w-52 lg:h-16">
                   <Image
-                    src="/logo.png"
+                    src="/images/ApexLogo.png"
                     alt="Rupani Development Initiatives Logo"
                     fill
                     priority

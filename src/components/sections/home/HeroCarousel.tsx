@@ -22,8 +22,8 @@ const slides = [
     subheading: "Our Impact at a Glance-Subtext",
     caption: "Prepared communities. Protected futures.",
   },
-    {
-    image: "/images/slider-3.jpeg",
+  {
+    image: "/images/slider-1.jpeg",
     heading: "Education & Digital Futures",
     subheading: "Bridging the Digital Divide in Afghanistan",
     caption: "Empowering minds through digital inclusion.",
@@ -58,6 +58,7 @@ export default function HeroCarousel() {
             }
           `}
         >
+          {/* Background Image */}
           <Image
             src={slide.image}
             alt={slide.heading}
@@ -65,6 +66,9 @@ export default function HeroCarousel() {
             className="object-cover object-center"
             priority={index === 0}
           />
+
+          {/* Bottom Gradient Overlay */}
+          <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-20"></div>
 
           {/* Text Overlay */}
           <div className="absolute bottom-10 left-6 md:left-16 text-left text-white z-30 max-w-[80%] animate-fadeIn">
