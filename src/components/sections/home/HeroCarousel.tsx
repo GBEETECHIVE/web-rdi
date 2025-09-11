@@ -19,7 +19,7 @@ const slides = [
   {
     image: "/images/climate-2.jpg",
     heading: "Climate Resilience",
-    subheading: "Our Impact at a Glance-Subtext",
+    subheading: "Our Impact at a Glance",
     caption: "Prepared communities. Protected futures.",
   },
   {
