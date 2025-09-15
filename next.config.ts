@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true, // keeps React in strict mode for catching issues
-  output: 'export', // enables static export -> creates "out" folder on build
+  reactStrictMode: true,
+  output: 'export',
 
   images: {
+    unoptimized: true, // 👈 disables next/image optimization for static export
     formats: ["image/avif", "image/webp"],
     remotePatterns: [
       {
