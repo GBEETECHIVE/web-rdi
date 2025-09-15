@@ -1,13 +1,8 @@
-// /** @type {import('next').NextConfig} */
-// const nextConfig = {
-//   reactStrictMode: true,
-// };
-
-// module.exports = nextConfig;
-
 /** @type {import('next').NextConfig} */
-
 const nextConfig = {
+  reactStrictMode: true, // keeps React in strict mode for catching issues
+  output: 'export', // enables static export -> creates "out" folder on build
+
   images: {
     formats: ["image/avif", "image/webp"],
     remotePatterns: [
@@ -19,10 +14,10 @@ const nextConfig = {
       },
     ],
   },
+
   eslint: {
     ignoreDuringBuilds: true,
   },
+};
 
-}
-
-module.exports = nextConfig
+module.exports = nextConfig;
