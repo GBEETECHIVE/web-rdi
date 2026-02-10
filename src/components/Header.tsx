@@ -17,9 +17,16 @@ const navItems = [
   },
   { href: "/rupani-initiatives", label: "RDI Initiatives" },
   { href: "/news-and-events", label: "News & Events" },
-  { href: "/conference", label: "Join Conference" },
+  {
+    label: "Join Conference",
+    children: [
+      { href: "/conference", label: "English" },
+      { href: "/conferencespanish", label: "Español" },
+    ],
+  },
   { href: "/contact-us", label: "Contact Us" },
 ];
+
 
 export default function Header() {
   const pathname = usePathname();
@@ -40,9 +47,8 @@ export default function Header() {
 
   return (
     <nav
-      className={`sticky top-0 z-50 bg-white border-b border-gray-200 dark:bg-gray-900 dark:border-gray-700 transition-shadow duration-300 ${
-        scrolled ? "shadow-md" : ""
-      }`}
+      className={`sticky top-0 z-50 bg-white border-b border-gray-200 dark:bg-gray-900 dark:border-gray-700 transition-shadow duration-300 ${scrolled ? "shadow-md" : ""
+        }`}
     >
       <div className="max-w-screen-xl mx-auto flex items-center justify-between px-2 py-4">
         {/* <Link href="/" className="flex items-center flex-shrink-0">
@@ -90,10 +96,9 @@ export default function Header() {
                 >
                   <span
                     className={`cursor-pointer px-2 py-1 inline-block border-b-2 transition duration-300
-                      ${
-                        isActive
-                          ? "border-b-[#0077f2] text-[#0077f2] font-semibold"
-                          : "border-transparent text-gray-900 dark:text-white"
+                      ${isActive
+                        ? "border-b-[#0077f2] text-[#0077f2] font-semibold"
+                        : "border-transparent text-gray-900 dark:text-white"
                       }
                       hover:text-[#0077f2] hover:border-b-[#0077f2]`}
                   >
@@ -103,10 +108,9 @@ export default function Header() {
                   {/* Dropdown */}
                   <ul
                     className={`absolute left-0 w-48 z-50 bg-white dark:bg-gray-800 shadow-lg rounded-md py-2 transition-all duration-200 ease-in-out
-                      ${
-                        openDropdown === label
-                          ? "opacity-100 visible"
-                          : "opacity-0 invisible pointer-events-none"
+                      ${openDropdown === label
+                        ? "opacity-100 visible"
+                        : "opacity-0 invisible pointer-events-none"
                       }`}
                   >
                     {children.map(({ href: subHref, label: subLabel }) => {
@@ -115,11 +119,10 @@ export default function Header() {
                         <li key={subHref}>
                           <Link
                             href={subHref}
-                            className={`block px-4 py-2 text-sm transition ${
-                              isChildActive
+                            className={`block px-4 py-2 text-sm transition ${isChildActive
                                 ? "text-[#0077f2] font-semibold bg-gray-100"
                                 : "text-gray-700 hover:bg-gray-100"
-                            }`}
+                              }`}
                           >
                             {subLabel}
                           </Link>
@@ -136,10 +139,9 @@ export default function Header() {
                 <Link
                   href={href}
                   className={`px-2 py-1 inline-block border-b-2 border-transparent transition duration-300
-                    ${
-                      isActive
-                        ? "border-b-[#0077f2] text-[#0077f2] font-semibold"
-                        : "text-gray-900 dark:text-white"
+                    ${isActive
+                      ? "border-b-[#0077f2] text-[#0077f2] font-semibold"
+                      : "text-gray-900 dark:text-white"
                     }
                     hover:border-b-[#0077f2] hover:text-[#0077f2] hover:scale-105`}
                 >
@@ -213,17 +215,15 @@ export default function Header() {
                         setMobileDropdownOpen(isOpen ? null : label)
                       }
                       className={`w-full flex justify-between items-center mb-1 focus:outline-none transition
-                        ${
-                          isActive
-                            ? "text-[#0077f2] font-semibold"
-                            : "text-gray-900 dark:text-white"
+                        ${isActive
+                          ? "text-[#0077f2] font-semibold"
+                          : "text-gray-900 dark:text-white"
                         }`}
                     >
                       {label}
                       <svg
-                        className={`w-5 h-5 transition-transform duration-300 ${
-                          isOpen ? "rotate-180" : "rotate-0"
-                        }`}
+                        className={`w-5 h-5 transition-transform duration-300 ${isOpen ? "rotate-180" : "rotate-0"
+                          }`}
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -237,9 +237,8 @@ export default function Header() {
                       </svg>
                     </button>
                     <ul
-                      className={`pl-4 space-y-3 overflow-hidden transition-max-height duration-300 ease-in-out ${
-                        isOpen ? "max-h-96" : "max-h-0"
-                      }`}
+                      className={`pl-4 space-y-3 overflow-hidden transition-max-height duration-300 ease-in-out ${isOpen ? "max-h-96" : "max-h-0"
+                        }`}
                     >
                       {children.map(({ href: subHref, label: subLabel }) => {
                         const isChildActive = pathname === subHref;
@@ -247,11 +246,10 @@ export default function Header() {
                           <li key={subHref}>
                             <Link
                               href={subHref}
-                              className={`block transition ${
-                                isChildActive
+                              className={`block transition ${isChildActive
                                   ? "text-[#0077f2] font-semibold"
                                   : "text-gray-700 dark:text-gray-300 hover:text-[#0077f2]"
-                              }`}
+                                }`}
                               onClick={() => {
                                 setMobileOpen(false);
                                 setMobileDropdownOpen(null);
@@ -272,10 +270,9 @@ export default function Header() {
                   <Link
                     href={href}
                     className={`block px-4 py-2 border-b-2 border-transparent transition duration-300
-                      ${
-                        isActive
-                          ? "border-b-[#0077f2] text-[#0077f2] font-semibold"
-                          : "text-gray-900 dark:text-white"
+                      ${isActive
+                        ? "border-b-[#0077f2] text-[#0077f2] font-semibold"
+                        : "text-gray-900 dark:text-white"
                       }
                       hover:border-b-[#0077f2] hover:text-[#0077f2]`}
                     onClick={() => {
