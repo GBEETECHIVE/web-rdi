@@ -24,7 +24,7 @@ At RDI, we believe that building stronger communities leads to a more sustainabl
 We look forward to sharing insights, stories, and outcomes from this milestone event. Stay tuned as we take you behind the scenes of our journey at AVPN 2025!
 Follow our updates live from Hong Kong and be part of the movement toward sustainable development and social impact.`,
     image: "/images/avpn.png",
-    isNew: true,
+    isNew: false,
   },
   {
     title:

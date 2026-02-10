@@ -4,7 +4,8 @@ const events = [
   {
     title: "RDI at AVPN Conference 2025: Strengthening Impact Across Asia",
     image: "/images/avpn.png",
-    isNew: true,
+    // isNew: true,
+    isNew: false,
   },
   {
     title: "Investment Roadshow–USA",
