@@ -17,6 +17,7 @@ const navItems = [
   },
   { href: "/rupani-initiatives", label: "RDI Initiatives" },
   { href: "/news-and-events", label: "News & Events" },
+  { href: "/conference", label: "Join Conference" },
   { href: "/contact-us", label: "Contact Us" },
 ];
 
