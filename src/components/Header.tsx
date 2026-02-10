@@ -314,7 +314,7 @@ const navItems = [
   {
     label: "Join Conference",
     children: [
-      { href: "/conference", label: "English" },
+      { href: "/conference-eng", label: "English" },
       { href: "/conference-spanish", label: "Español" },
     ],
   },
