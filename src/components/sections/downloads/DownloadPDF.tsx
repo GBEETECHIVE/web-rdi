@@ -1,15 +1,16 @@
+'use client';
 import Image from "next/image";
 import Link from "next/link";
 
 const reports = [
   {
     title: "Brochure",
-    pdf: "/brochure/RdiBrochure.pdf",
+    pdf: "/filesPDF/RdiBrochure.pdf",
     cover: "/images/pdfImg.png",
   },
   {
     title: "RDI Profile",
-    pdf: "/reports/RdiProfile.pdf",
+    pdf: "/filesPDF/RdiBrochure.pdf",
     cover: "/images/pdfImg.png",
   },
 ];
@@ -44,8 +45,7 @@ export default function DownloadPDF() {
               <Link
                 href={report.pdf}
                 target="_blank"
-                rel="noopener noreferrer"
-                download
+                download={report.title.replace(/\s+/g, '-') + '.pdf'}
                 className="bg-blue-600 hover:bg-blue-700 text-white mt-2 inline-block px-6 py-2 border border-blue-400 rounded transition"
               >
                 Download
