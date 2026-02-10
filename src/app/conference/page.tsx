@@ -1,4 +1,3 @@
-import ConferenceSchedule from "@/components/sections/conference-data/ConferenceSchedule";
 import FeaturedPresenters from "@/components/sections/conference-data/FeaturedPresenters";
 import HeroConference from "@/components/sections/conference-data/HeroSection";
 import JoinUs from "@/components/sections/conference-data/JoinUs";
@@ -14,7 +13,7 @@ export default function Index() {
       <JoinUs/>
       <WhyAttend/>
       <ReasonsToAttend/>
-      <ConferenceSchedule/>
+      {/* <ConferenceSchedule/> */}
       <TopicsInclude/>
       <FeaturedPresenters/>
       <QuestionsForConference/>
