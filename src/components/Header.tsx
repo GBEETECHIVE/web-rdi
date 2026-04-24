@@ -350,7 +350,7 @@ export default function Header() {
         <Link href="/" className="flex items-center flex-shrink-0">
           <div className="relative w-28 h-10 sm:w-36 sm:h-12 md:w-44 md:h-14 lg:w-52 lg:h-16">
             <Image
-              src="/logo.png"
+              src="/images/RDI Logo white.png"
               alt="Rupani Development Initiatives Logo"
               fill
               priority
