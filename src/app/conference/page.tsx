@@ -841,6 +841,17 @@ const speakers = [
 
 const concurrentSpeakers = [
     {
+        name: "Ms. Izza Farrakh",
+        org: "Senior Education Specialist, World Bank",
+        role: "Chair",
+        Image: ""
+    }, {
+        name: "Dr. Seema Lasi",
+        org: "Assistant Professor, Aga Khan University",
+        role: "Moderator",
+        image: ""
+    }
+    , {
         name: "Dr Shelina Bhamani",
         org: "Associate Professor & Lead ECD, AKU",
         role: "Panelist",
@@ -869,6 +880,13 @@ const concurrentSpeakers = [
         org: "Director, National Curriculum Council",
         role: "Panelist",
         image: "/images/speakers/Dr. Tabassum Naz.jpg",
+    },
+    {
+        name: "Ms. Fakhira Najeeb",
+        org: "Board of Director, Pakistan Alliance for Early Childhood (National Panelist)",
+        role: "Panelist",
+        image: "/images/speakers/Ms. Fakhira Najeeb.jpg",
+
     },
     {
         name: "Ms. Seher Taimoor",
@@ -1112,10 +1130,10 @@ export default function HomePage() {
                             "PLENARY-1: Economics and Sustainable Mechanisms- Innovative Approaches to ECD Finances",
                         speakers: [
                             {
-                                name:"Ms. Romina Khurshid Alam",
+                                name: "Ms. Romina Khurshid Alam",
                                 org: "Coordinator to the Prime Minister on Climate Change & Environmental Coordination",
                                 role: "Chair",
-                                image:"/images/speakers/Ms. Romina Khurshid Alam.jpg",
+                                image: "/images/speakers/Ms. Romina Khurshid Alam.jpg",
                             }
                             ,
                             {
@@ -1158,11 +1176,11 @@ export default function HomePage() {
                                 name: "Syed Jalal ud Din Shah",
                                 org: "Global CEO, Rupani Foundation",
                                 role: "Moderator",
-                                image:"/images/speakers/Syed Jalal ud Din Shah.jpg",
-                                
-                            },{
+                                image: "/images/speakers/Syed Jalal ud Din Shah.jpg",
+
+                            }, {
                                 name: "Ms. Shekufeh Zonji",
-                                org:"Early Childhood Development Action Network (ECDAN)",
+                                org: "Early Childhood Development Action Network (ECDAN)",
                                 role: "Panelist",
                                 image: "",
                             }
@@ -1175,32 +1193,32 @@ export default function HomePage() {
                         plenary:
                             "PLENARY-2: Nurturing Care Across Cultures: Innovations and Inclusive Approaches to ECD",
                         speakers: [
-                        {
-                                name:"Ms. Sharmeela Rassool",
+                            {
+                                name: "Ms. Sharmeela Rassool",
                                 org: "Deputy Country Representative, UNICEF",
                                 role: "Chair",
                                 image: "/images/speakers/Ms. Sharmeela Rassool.jpg",
                             },
-                        {
-                            name:"Mr. Muzaffar Ud Din",
-                            org: "Country Representative, The Asia Foundation",
-                            role: "Country Representative, The Asia Foundation",
-                            image:"/images/speakers/Mr. Muzaffar Ud Din.jpg",
-                        },
-                        {
-                            name:"Dr. Shelina Bhamani",
-                            org:"Associate Professor, Program Director Outreach Education & Lead ECD PREP ObGyn, Aga Khan University",
-                
-                            role: "Moderator",
-                            image: "/images/speakers/Dr Shelina Bhamani.jpg",
+                            {
+                                name: "Mr. Muzaffar Ud Din",
+                                org: "Country Representative, The Asia Foundation",
+                                role: "Country Representative, The Asia Foundation",
+                                image: "/images/speakers/Mr. Muzaffar Ud Din.jpg",
+                            },
+                            {
+                                name: "Dr. Shelina Bhamani",
+                                org: "Associate Professor, Program Director Outreach Education & Lead ECD PREP ObGyn, Aga Khan University",
+
+                                role: "Moderator",
+                                image: "/images/speakers/Dr Shelina Bhamani.jpg",
 
                             },
                             {
                                 name: "MMr. Shinozaki Yusuke",
                                 org: "Chief Representative, JICA Pakistan",
                                 role: "Keynote Speaker",
-                                image:"/images/speakers/Mr. Shinozaki Yusuke.jpg",
-                        },
+                                image: "/images/speakers/Mr. Shinozaki Yusuke.jpg",
+                            },
                             {
                                 name: "Dr Karen Boardman",
                                 org: "Head of Department, Early Years Education, Edge Hill University, Lancashire, UK",
@@ -1238,10 +1256,10 @@ export default function HomePage() {
                                 image: "/images/speakers/Dr Zeba Rasmussen.jpg",
                             },
                             {
-                                name:"Dr. Naila Khalid",
+                                name: "Dr. Naila Khalid",
                                 org: "Health & Nutrition Advisor, Save the Children",
-                                role:"Panelist",
-                                image:"/images/speakers/Dr. Naila Khalid.jpg",
+                                role: "Panelist",
+                                image: "/images/speakers/Dr. Naila Khalid.jpg",
                             }
                         ],
                     },
@@ -1258,10 +1276,10 @@ export default function HomePage() {
                                 image: "/images/speakers/Dr. Naeem Zafar.jpg",
                             }, {
                                 name: "Dr. Hana Mahmood",
-                                org:"Chief of Global Health, International Research Force",
+                                org: "Chief of Global Health, International Research Force",
                                 role: "Moderator",
                                 image: "/images/speakers/Dr. Hana Mahmood.jpg",
-                        },
+                            },
                             {
                                 name: "Prof. Dr. Jamal Raza",
                                 org: "National Institute of Child Health Karachi",
@@ -1285,7 +1303,7 @@ export default function HomePage() {
                                 org: "Developmental Pediatrician, The Children's Hospital Lahore",
                                 role: "Panelist",
                                 image: "/images/speakers/Dr Fatima Rehman.jpg",
-                            },{
+                            }, {
                                 name: "Dr. Mehek Naeem",
                                 org: "Member Punjab, National Commission on the Rights of Child Pakistan",
                                 role: "Panelist",
@@ -1325,22 +1343,38 @@ export default function HomePage() {
                             "PLENARY 1: Strengthening the ECD Workforce & Regional Cooperation",
                         speakers: [
                             {
+                                name: "Dr. Nasir Mehmood",
+                                org: "Vice Chancellor, Allama Iqbal Open University",
+                                role: "Chair",
+                                image: "/images/speakers/Dr. Nasir Mehmood.jpg",
+
+                            },
+                            {
+                                name: "Ms. Khadija Khan",
+                                org: "Chief Executive Officer, Pakistan Alliance for Early Childhood",
+                                role: "Moderator",
+                                image: "/images/speakers/Ms. Khadija Khan.jpg",
+                            },
+                            {
+                                name: "Prof. Dr. Fareed Panjwani",
+                                org: "Dean, Institute for Educational Development(IED), Aga Khan University",
+                                role: "Keynote Speaker",
+                                image: "/images/speakers/Dr. Fareed Panjwani.jpg",
+                            },
+
+                            {
                                 name: "Prof Mathias Urban",
                                 org: "Chairman, Early Childhood Education and Director, Early Childhood Research Center, University of Ireland",
                                 role: "Keynote Speaker (International)",
                                 image: "/images/speakers/Prof Mathias Urban.jpg",
                             },
+
+
                             {
                                 name: "Ms. Sara Lajam",
                                 org: "Dubai Care Representative",
                                 role: "Speaker (International)",
-                                image: "",
-                            },
-                            {
-                                name: "Dr. Fareed Panjwani",
-                                org: "Dean, Institute for Educational Development (IED), Aga Khan University",
-                                role: "Panelist",
-                                image: "/images/speakers/Dr. Fareed Panjwani.jpg",
+                                image: "/images/speakers/Ms. Sara Lajam.jpg",
                             },
                             {
                                 name: "Ms. Ambreena Ahmed",
@@ -1352,7 +1386,7 @@ export default function HomePage() {
                                 name: "Mr. Abid Gill",
                                 org: "Deputy Chief Advisor, Japan International Cooperation Agency",
                                 role: "Panelist",
-                                image: "",
+                                image: "/images/speakers/Mr. Abid Gill.jpg",
                             },
                             {
                                 name: "Mr. Syed Javid Gillani",
@@ -1364,8 +1398,20 @@ export default function HomePage() {
                                 name: "Mr. Siva Prasad",
                                 org: "Asia-Pacific Regional Network for Early Childhood(ARNEC)",
                                 role: "Panelist (International)",
-                                image: "",
+                                image: "/images/speakers/Mr. Siva Prasad.jpg",
                             },
+                            {
+                                name: "Dr. Mihaela Ionesco",
+                                org: "Programme Director, ISSA",
+                                role: "Panelist",
+                                image: "/images/speakers/Dr. Mihaela Ionesco.jpg",
+                            },
+                            {
+                                name: "Ms. Nikita Srivastav",
+                                org: "Assistant Director, Health Impact at AVPN",
+                                role: "Panelist",
+                                image: "/images/speakers/Ms. Nikita Srivastav.jpg",
+                            }
                         ],
                     },
 
@@ -1376,10 +1422,31 @@ export default function HomePage() {
                             "PLENARY 2: Research, Measurement & Accountability Systems",
                         speakers: [
                             {
+                                name: "Ms. Rabia Awan",
+                                org: "Director General, Pakistan Bureau of Statistics",
+                                role: "Chair",
+                                image: "/images/speakers/Ms. Rabia Awan.jpg",
+
+                            },
+                            {
+                                name: "Dr Shehzad Mithani",
+                                org: "Education Policy Expert",
+                                role: "Moderator",
+                                image: "/images/speakers/Dr Shehzad Mithani.jpg",
+                            },
+
+                            {
                                 name: "Ms. Vanessa Cavallera",
                                 org: "WHO Global Expert",
                                 role: "Keynote Speaker (International)",
                                 image: "/images/speakers/Ms. Vanessa Cavallera.jpg",
+                            },
+                            {
+                                name: "Dr. Mazhar Iqbal",
+                                org: "Nutrition Specialist, UNICEF",
+                                role: "Panelist",
+                                image: ""
+
                             },
                             {
                                 name: "Dr. Saba Shuja",
@@ -1387,6 +1454,7 @@ export default function HomePage() {
                                 role: "Panelist",
                                 image: "/images/speakers/Dr. Saba Shuja.png",
                             },
+
                             {
                                 name: "Dr. Shahid Soroya",
                                 org: "Director General, Pakistan Institute of Education",
@@ -1411,6 +1479,12 @@ export default function HomePage() {
                                 role: "Panelist",
                                 image: "/images/speakers/Dr. Tooba Saleem.jpg",
                             },
+                            {
+                                name: "Mr. Ghulam Muhammad Shah",
+                                org: "Monitoring, Evaluation and Impact Assessments Specialist",
+                                role: "Panelist",
+                                image: "/images/speakers/Mr. Ghulam Muhammad Shah.jpg",
+                            }
                         ],
                     },
 
@@ -1420,6 +1494,18 @@ export default function HomePage() {
                         plenary:
                             "PLENARY 3: Caregivers' Mental Health & MH&PSS Integration",
                         speakers: [
+                            {
+                                name: "Ms. Ellen Thom",
+                                org: "Deputy Representative, WHO",
+                                role: "Chair",
+                                image: "/images/speakers/Ms. Ellen Thom.jpg",
+                            }, {
+                                name: "Dr. Roop Zainab",
+                                org: "Psychiatrist & CEO, The Healing Triad",
+                                role: "Moderator",
+                                image: "/images/speakers/Dr. Roop Zainab.jpg",
+
+                            },
                             {
                                 name: "Dr. Mowadat Hussain Rana",
                                 org: "Professor of Psychiatry and Behavioural Sciences",
@@ -1442,7 +1528,7 @@ export default function HomePage() {
                                 name: "Ms. Falak Madhani",
                                 org: "Brain and Mind Institute(BMI), Aga Khan University",
                                 role: "Panelist",
-                                image: "",
+                                image: "/images/speakers/Ms. Falak Madhani.jpg",
                             },
                             {
                                 name: "Dr. Asma Humayun",
