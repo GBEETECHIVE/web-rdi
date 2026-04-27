@@ -1112,6 +1112,13 @@ export default function HomePage() {
                             "PLENARY-1: Economics and Sustainable Mechanisms- Innovative Approaches to ECD Finances",
                         speakers: [
                             {
+                                name:"Ms. Romina Khurshid Alam",
+                                org: "Coordinator to the Prime Minister on Climate Change & Environmental Coordination",
+                                role: "Chair",
+                                image:"/images/speakers/Ms. Romina Khurshid Alam.jpg",
+                            }
+                            ,
+                            {
                                 name: "Mr. Stephen Rasmussen",
                                 org: "Chairman, Community & Enterprise Development Organization",
                                 role: "Keynote Speaker (International)",
@@ -1147,6 +1154,18 @@ export default function HomePage() {
                                 role: "Panelist (International)",
                                 image: "/images/speakers/Vikas Arora.jpg",
                             },
+                            {
+                                name: "Syed Jalal ud Din Shah",
+                                org: "Global CEO, Rupani Foundation",
+                                role: "Moderator",
+                                image:"/images/speakers/Syed Jalal ud Din Shah.jpg",
+                                
+                            },{
+                                name: "Ms. Shekufeh Zonji",
+                                org:"Early Childhood Development Action Network (ECDAN)",
+                                role: "Panelist",
+                                image: "",
+                            }
                         ],
                     },
 
@@ -1156,6 +1175,32 @@ export default function HomePage() {
                         plenary:
                             "PLENARY-2: Nurturing Care Across Cultures: Innovations and Inclusive Approaches to ECD",
                         speakers: [
+                        {
+                                name:"Ms. Sharmeela Rassool",
+                                org: "Deputy Country Representative, UNICEF",
+                                role: "Chair",
+                                image: "/images/speakers/Ms. Sharmeela Rassool.jpg",
+                            },
+                        {
+                            name:"Mr. Muzaffar Ud Din",
+                            org: "Country Representative, The Asia Foundation",
+                            role: "Country Representative, The Asia Foundation",
+                            image:"/images/speakers/Mr. Muzaffar Ud Din.jpg",
+                        },
+                        {
+                            name:"Dr. Shelina Bhamani",
+                            org:"Associate Professor, Program Director Outreach Education & Lead ECD PREP ObGyn, Aga Khan University",
+                
+                            role: "Moderator",
+                            image: "/images/speakers/Dr Shelina Bhamani.jpg",
+
+                            },
+                            {
+                                name: "MMr. Shinozaki Yusuke",
+                                org: "Chief Representative, JICA Pakistan",
+                                role: "Keynote Speaker",
+                                image:"/images/speakers/Mr. Shinozaki Yusuke.jpg",
+                        },
                             {
                                 name: "Dr Karen Boardman",
                                 org: "Head of Department, Early Years Education, Edge Hill University, Lancashire, UK",
@@ -1192,6 +1237,12 @@ export default function HomePage() {
                                 role: "Panelist",
                                 image: "/images/speakers/Dr Zeba Rasmussen.jpg",
                             },
+                            {
+                                name:"Dr. Naila Khalid",
+                                org: "Health & Nutrition Advisor, Save the Children",
+                                role:"Panelist",
+                                image:"/images/speakers/Dr. Naila Khalid.jpg",
+                            }
                         ],
                     },
 
@@ -1200,6 +1251,17 @@ export default function HomePage() {
                         day: "DAY-1",
                         plenary: "PLENARY-3: Health, Nutrition and Safety & Security",
                         speakers: [
+                            {
+                                name: "Dr. Naeem Zafar",
+                                org: "Chairman, Pakistan Alliance for Early Childhood",
+                                role: "Chair",
+                                image: "/images/speakers/Dr. Naeem Zafar.jpg",
+                            }, {
+                                name: "Dr. Hana Mahmood",
+                                org:"Chief of Global Health, International Research Force",
+                                role: "Moderator",
+                                image: "/images/speakers/Dr. Hana Mahmood.jpg",
+                        },
                             {
                                 name: "Prof. Dr. Jamal Raza",
                                 org: "National Institute of Child Health Karachi",
@@ -1223,6 +1285,11 @@ export default function HomePage() {
                                 org: "Developmental Pediatrician, The Children's Hospital Lahore",
                                 role: "Panelist",
                                 image: "/images/speakers/Dr Fatima Rehman.jpg",
+                            },{
+                                name: "Dr. Mehek Naeem",
+                                org: "Member Punjab, National Commission on the Rights of Child Pakistan",
+                                role: "Panelist",
+                                image: "",
                             },
                             {
                                 name: "Ms. Ayesha Raza Farooq",
