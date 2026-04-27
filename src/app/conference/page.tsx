@@ -895,6 +895,30 @@ const concurrentSpeakers = [
         image: "/images/speakers/Ms. Seher Taimoor .jpg",
     },
 ];
+const concurrentSpeakers2 = [
+    {
+        day:"Day-2",
+        name: "Col. Rtd. Abrar Ismail",
+        org: "Minister Finance, Government of Gilgit Baltistan",
+        role: "Chair",
+        image: "/images/speakers/Col Rtd Abrar Ismail.jpg",
+    }, 
+    {
+        day:"Day-2",
+        name: "Prof. Dr. Nasir Mehmood",
+        org: "Vice-Chancellor, AIOU",
+        role: "Co-Chair",
+        image: "/images/speakers/Prof Dr Nasir Mahmood.jpg",
+
+    }, {
+        day: "Day-2",
+        name: "Dr. Ehtasham Anwar",
+        org: "Team Lead, Data and Research in Education, FCDO",
+        role: "Moderator",
+        image:"",
+    
+    }
+];
 
 // Get initials
 const getInitials = (name: string) => {
@@ -1722,6 +1746,81 @@ export default function HomePage() {
                     </p>
                 </div>
             </section>
+            {/* DAY-2 — Roundtable on the Operationalization of the National ECD Policy Framework with Provincial Ministers and Other Government Officials Facilitated by Key ECD
+ */}
+
+          
+                    <section id="speakers" className="py-16 bg-gray-50">
+                        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                            {/* Heading */}
+                            <div className="text-center max-w-7xl mx-auto">
+                                <h2 className="text-3xl sm:text-4xl font-bold text-blue-900">
+                                    DAY-2 — Roundtable on the Operationalization of the National ECD Policy Framework with Provincial Ministers and Other Government Officials Facilitated by Key ECD
+                                </h2>
+                               
+                            </div>
+                    {concurrentSpeakers2.map((speakers, index) => (
+                                <div key={index} className="mt-16">
+
+                                  
+
+                                    <div className="grid md:grid-cols-2 gap-6">
+                                             <div
+                                                 className="group bg-white rounded-2xl shadow-sm border border-gray-100 p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                                            >
+                                                {/* Day */}
+                                                <div className="mb-4">
+                                                    <span className="bg-blue-600 text-white text-xs font-semibold px-4 py-1.5 rounded-full">
+                                                        {speakers.day}
+                                                    </span>
+                                                </div>
+
+                                                <div className="flex gap-4">
+                                                    <div className="w-16 h-16 rounded-full overflow-hidden ring-2 ring-blue-100">
+                                            {speakers.image ? (
+                                                            <Image
+                                                                src={speakers.image}
+                                                    alt={speakers.name}
+                                                                width={64}
+                                                                height={64}
+                                                                className="object-cover w-full h-full"
+                                                            />
+                                                        ) : (
+                                                            <div className="w-full h-full bg-blue-100 flex items-center justify-center text-blue-600 font-semibold">
+                                                        {speakers.name.charAt(0)}
+                                                            </div>
+                                                        )}
+                                                    </div>
+
+                                                    <div>
+                                                        <h3 className="text-lg font-semibold text-gray-900 group-hover:text-blue-600 transition">
+                                                {speakers.name}
+                                                        </h3>
+
+                                                        <p className="text-gray-600 text-sm mt-1">
+                                                            {speakers.org}
+                                                        </p>
+
+                                                        <p className="mt-2 text-sm font-semibold text-blue-600">
+                                                            {speakers.role}
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                {/* Plenary */}
+                                                <div className="mt-4">
+                                                    <span className="bg-blue-100 text-blue-600 text-xs font-medium px-2 py-1.5 rounded-full">
+                                            Roundtable on the Operationalization of the National ECD Policy Framework with Provincial Ministers and Other Government Officials Facilitated by Key ECD
+                                                    </span>
+                                                </div>
+                                            </div>
+                                     </div>
+                                </div>
+                            ))}
+                        </div>
+                    </section>
+                 
+             
 
             {/* Conference core committee */}
             <section
