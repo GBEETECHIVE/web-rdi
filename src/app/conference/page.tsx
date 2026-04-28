@@ -39,6 +39,11 @@ const getAvatarColor = (name: string) => {
 
 export default function HomePage() {
     const [activeTab, setActiveTab] = useState(0);
+    const [activeDay, setActiveDay] = useState("DAY-1");
+
+    const filteredPlenaries = plenarySpeakers.filter(
+        (item) => item.day === activeDay
+    );
 
     return (
         <main className="min-h-screen text-gray-800">
@@ -216,11 +221,6 @@ export default function HomePage() {
 
             {/* Speakers Section */}
             {(() => {
-                const [activeDay, setActiveDay] = useState("DAY-1");
-
-                const filteredPlenaries = plenarySpeakers.filter(
-                    (item) => item.day === activeDay
-                );
 
                 return (
                     <section id="speakers" className="py-16 bg-gray-50">
@@ -296,7 +296,7 @@ export default function HomePage() {
             })()}
 
             {/* CONCURRENT SESSION: Early Learning Opportunities (concurrent) */}
-            <section
+            {activeDay === "DAY-2" &&  <> <section
                 id="conference-committee"
                 className="py-20 bg-gradient-to-b from-white to-blue-50"
             >
@@ -340,10 +340,7 @@ export default function HomePage() {
                     </p> */}
                 </div>
             </section>
-            {/* DAY-2 — Roundtable on the Operationalization of the National ECD Policy Framework with Provincial Ministers and Other Government Officials Facilitated by Key ECD
- */}
-
-
+    
             <section id="speakers" className="py-16 bg-gray-50">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     {/* Heading */}
@@ -375,8 +372,8 @@ export default function HomePage() {
                     ))}
                 </div>
             </section>
-
-
+            </>
+                }
 
             {/* Conference core committee */}
             <section
