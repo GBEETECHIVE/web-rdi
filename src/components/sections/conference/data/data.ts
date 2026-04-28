@@ -175,8 +175,8 @@ export const speakers = [
   },
   {
     name: "Mr. Waseem Samad",
-    role: "Group Chief Executive Officer",
-    org: "Apex & Co., Rupani Foundation",
+    role: "CEO",
+    org: "Apex & Co. Rupani Foundation",
     image: "",
   },
   {
@@ -385,17 +385,17 @@ export const plenarySpeakers = [
           },
         ],
       },
-      {
-        role: "Moderator",
-        people: [
-          {
-            name: "Syed Jalal ud Din Shah",
-            org: "Global CEO, Rupani Foundation",
-            role: "Moderator",
-            image: "/images/speakers/Syed Jalal ud Din Shah.jpg",
-          },
-        ],
-      },
+      // {
+      //   role: "Moderator",
+      //   people: [
+      // {
+      //   name: "Syed Jalal ud Din Shah",
+      //   org: "Global CEO, Rupani Foundation",
+      //   role: "Moderator",
+      //   image: "/images/speakers/Syed Jalal ud Din Shah.jpg",
+      // },
+      //   ],
+      // },
       {
         role: "Keynote Speakers",
         people: [
@@ -475,7 +475,7 @@ export const plenarySpeakers = [
           {
             name: "Mr. Muzaffar Ud Din",
             org: "Country Representative, The Asia Foundation",
-            role: "Country Representative, The Asia Foundation",
+            role: "Co-Chair",
             image: "/images/speakers/Mr. Muzaffar Ud Din.jpg",
           },
         ],
@@ -500,12 +500,12 @@ export const plenarySpeakers = [
             role: "Keynote Speaker",
             image: "/images/speakers/Mr. Shinozaki Yusuke.jpg",
           },
-          {
-            name: "Dr Karen Boardman",
-            org: "Head of Department, Early Years Education, Edge Hill University, Lancashire, UK",
-            role: "Keynote Speaker (International)",
-            image: "/images/speakers/Dr Karen Boardman.jpg",
-          },
+          // {
+          //   name: "Dr Karen Boardman",
+          //   org: "Head of Department, Early Years Education, Edge Hill University, Lancashire, UK",
+          //   role: "Keynote Speaker (International)",
+          //   image: "/images/speakers/Dr Karen Boardman.jpg",
+          // },
         ],
       },
       {
@@ -617,18 +617,18 @@ export const plenarySpeakers = [
             role: "Panelist",
             image: "",
           },
-          {
-            name: "Ms. Ayesha Raza Farooq",
-            org: "Chairperson NCRC",
-            role: "Panelist",
-            image: "/images/speakers/Ms. Ayesha Raza Farooq.jpg",
-          },
-          {
-            name: "Dr. Wali Khan",
-            org: "DG Health",
-            role: "Panelist",
-            image: "/images/speakers/Dr. Wali Khan.jpg",
-          },
+          // {
+          //   name: "Ms. Ayesha Raza Farooq",
+          //   org: "Chairperson NCRC",
+          //   role: "Panelist",
+          //   image: "/images/speakers/Ms. Ayesha Raza Farooq.jpg",
+          // },
+          // {
+          //   name: "Dr. Wali Khan",
+          //   org: "DG Health",
+          //   role: "Panelist",
+          //   image: "/images/speakers/Dr. Wali Khan.jpg",
+          // },
           {
             name: "Dr. Shahzad Khan",
             org: "Vice Chancellor, HAS",

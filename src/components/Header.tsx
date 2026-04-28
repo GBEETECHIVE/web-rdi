@@ -319,11 +319,11 @@ const navItems = [
       {
         label: "USA",
         children: [
-          { href: "/conference-eng", label: "English" },
-          { href: "/conference-spanish", label: "Español" },
+          { href: "/usa-conference-english", label: "English" },
+          { href: "/usa-conference-spanish", label: "Español" },
         ],
       },
-      { href: "/conference", label: "AVPN" },
+      { href: "/avpn-conference", label: "AVPN" },
     ],
   },
   { href: "/contact-us", label: "Contact Us" },

@@ -296,7 +296,8 @@ export default function HomePage() {
             })()}
 
             {/* CONCURRENT SESSION: Early Learning Opportunities (concurrent) */}
-            {activeDay === "DAY-2" &&  <> <section
+            {activeDay === "DAY-2" && <>
+                {/* <section
                 id="conference-committee"
                 className="py-20 bg-gradient-to-b from-white to-blue-50"
             >
@@ -313,8 +314,7 @@ export default function HomePage() {
                         <div key={i}>
 
 
-                            {/* Roles */}
-                            {session.roles.map((roleGroup, rIndex) => (
+                             {session.roles.map((roleGroup, rIndex) => (
                                 <div key={rIndex} className="mb-10">
 
                                     <h4 className="text-lg font-bold text-center mb-6">
@@ -335,11 +335,11 @@ export default function HomePage() {
                     ))}
                    
 
-                    {/* <p className="mt-10 text-center text-gray-500 italic">
-                        …and more presenters to be announced
-                    </p> */}
+                    //<p className="mt-10 text-center text-gray-500 italic">
+                      //  …and more presenters to be announced
+                    // </p>
                 </div>
-            </section>
+            </section> */}
     
             <section id="speakers" className="py-16 bg-gray-50">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
