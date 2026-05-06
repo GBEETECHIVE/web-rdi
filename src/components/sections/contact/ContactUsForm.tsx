@@ -25,7 +25,7 @@ export default function ContactUs() {
                 type="text"
                 id="firstName"
                 placeholder="Bonnie"
-                className="w-full border border-[#D19C2A5E] text-gray-700  rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#D19C2A]"
+                className="w-full text-black border border-[#D19C2A5E] rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#D19C2A]"
               />
             </div>
 
@@ -41,7 +41,7 @@ export default function ContactUs() {
                 type="text"
                 id="lastName"
                 placeholder="Green"
-                className="w-full border border-[#D19C2A5E] rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#D19C2A]"
+                className="w-full text-black border border-[#D19C2A5E] rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#D19C2A]"
               />
             </div>
 
@@ -58,7 +58,7 @@ export default function ContactUs() {
                 id="email"
                 required
                 placeholder="name@example.com"
-                className="w-full border border-[#D19C2A5E] rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#D19C2A]"
+                className="w-full text-black border border-[#D19C2A5E] rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#D19C2A]"
               />
             </div>
 
@@ -75,7 +75,7 @@ export default function ContactUs() {
                 id="phone"
                 required
                 placeholder="+12 345 6789"
-                className="w-full border border-[#D19C2A5E] rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#D19C2A]"
+                className="w-full text-black border border-[#D19C2A5E] rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#D19C2A]"
               />
             </div>
           </div>
@@ -92,7 +92,7 @@ export default function ContactUs() {
               type="text"
               id="subject"
               placeholder="Subject of your message"
-              className="w-full border border-[#D19C2A5E] rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#D19C2A]"
+              className="w-full text-black border border-[#D19C2A5E] rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#D19C2A]"
             />
           </div>
 
@@ -109,7 +109,7 @@ export default function ContactUs() {
               rows={5}
               required
               placeholder="Leave a comment..."
-              className="w-full border border-[#D19C2A5E] rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#D19C2A]"
+              className="w-full text-black border border-[#D19C2A5E] rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#D19C2A]"
             ></textarea>
           </div>
 
