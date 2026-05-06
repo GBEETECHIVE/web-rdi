@@ -62,7 +62,7 @@ export default function NewsEvents() {
   return (
     <section className="py-12 px-4">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-center text-blue-900 mb-10">
+        <h2 className="text-4xl font-bold text-center text-[#037536] mb-10">
           News & Events
         </h2>
 
@@ -94,7 +94,7 @@ export default function NewsEvents() {
                 </div>
                 <button
                   onClick={() => setOpenModalIndex(index)}
-                  className="mt-4 text-center text-gray-800 text-sm font-semibold bg-gray-200 hover:bg-gray-300 py-3 transition w-full uppercase"
+                  className="mt-4 text-center text-gray-800 text-sm font-semibold bg-gray-200 hover:bg-[#d19c2ae1] hover:text-white py-3 transition w-full uppercase"
                 >
                   Read More
                 </button>
@@ -118,7 +118,7 @@ export default function NewsEvents() {
               {/* Modal Content with Scroll */}
               <div className="overflow-y-auto max-h-[80vh] pr-3">
                 {/* Title */}
-                <h2 className="text-2xl font-bold text-blue-900 mb-4">
+                <h2 className="text-2xl font-bold text-[#037536] mb-4">
                   {newsData[openModalIndex].title}
                 </h2>
 

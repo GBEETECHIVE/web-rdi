@@ -97,10 +97,10 @@
 //                   <span
 //                     className={`cursor-pointer px-2 py-1 inline-block border-b-2 transition duration-300
 //                       ${isActive
-//                         ? "border-b-[#0077f2] text-[#0077f2] font-semibold"
+//                         ? "border-b-[#D19C2A]  text-[#D19C2A]  font-semibold"
 //                         : "border-transparent text-gray-900 dark:text-white"
 //                       }
-//                       hover:text-[#0077f2] hover:border-b-[#0077f2]`}
+//                       hover:text-[#D19C2A]  hover:border-b-[#D19C2A] `}
 //                   >
 //                     {label}
 //                   </span>
@@ -120,7 +120,7 @@
 //                           <Link
 //                             href={subHref}
 //                             className={`block px-4 py-2 text-sm transition ${isChildActive
-//                                 ? "text-[#0077f2] font-semibold bg-gray-100"
+//                                 ? "text-[#D19C2A]  font-semibold bg-gray-100"
 //                                 : "text-gray-700 hover:bg-gray-100"
 //                               }`}
 //                           >
@@ -140,10 +140,10 @@
 //                   href={href}
 //                   className={`px-2 py-1 inline-block border-b-2 border-transparent transition duration-300
 //                     ${isActive
-//                       ? "border-b-[#0077f2] text-[#0077f2] font-semibold"
+//                       ? "border-b-[#D19C2A]  text-[#D19C2A]  font-semibold"
 //                       : "text-gray-900 dark:text-white"
 //                     }
-//                     hover:border-b-[#0077f2] hover:text-[#0077f2] hover:scale-105`}
+//                     hover:border-b-[#D19C2A]  hover:text-[#D19C2A]  hover:scale-105`}
 //                 >
 //                   {label}
 //                 </Link>
@@ -159,7 +159,7 @@
 //             href="https://docs.google.com/forms/d/e/1FAIpQLSeagCrGF_wCuabJNupF9RR9Hb7i1kOQBC2ydPc38C0S2bFRBg/viewform"
 //             target="_blank"
 //             rel="noopener noreferrer"
-//             className="hidden md:inline-block text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-800"
+//             className="hidden md:inline-block text-white bg-[#D19C2A]  hover:bg-[#D19C2A] focus:ring-4 focus:outline-none focus:ring-[#D19C2A] font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-[#D19C2A] dark:hover:bg-[#D19C2A]  dark:focus:ring-[#037536]"
 //           >
 //             Become a Volunteer
 //           </a>
@@ -168,7 +168,7 @@
 //           <button
 //             onClick={() => setMobileOpen(!mobileOpen)}
 //             type="button"
-//             className="inline-flex md:hidden items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+//             className="inline-flex md:hidden items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-[#D19C2A5E] dark:hover:bg-gray-700 dark:focus:ring-gray-600"
 //             aria-controls="navbar-cta"
 //             aria-expanded={mobileOpen}
 //           >
@@ -216,7 +216,7 @@
 //                       }
 //                       className={`w-full flex justify-between items-center mb-1 focus:outline-none transition
 //                         ${isActive
-//                           ? "text-[#0077f2] font-semibold"
+//                           ? "text-[#D19C2A]  font-semibold"
 //                           : "text-gray-900 dark:text-white"
 //                         }`}
 //                     >
@@ -247,8 +247,8 @@
 //                             <Link
 //                               href={subHref}
 //                               className={`block transition ${isChildActive
-//                                   ? "text-[#0077f2] font-semibold"
-//                                   : "text-gray-700 dark:text-gray-300 hover:text-[#0077f2]"
+//                                   ? "text-[#D19C2A]  font-semibold"
+//                                   : "text-gray-700 dark:text-[#D19C2A5E] hover:text-[#D19C2A] "
 //                                 }`}
 //                               onClick={() => {
 //                                 setMobileOpen(false);
@@ -271,10 +271,10 @@
 //                     href={href}
 //                     className={`block px-4 py-2 border-b-2 border-transparent transition duration-300
 //                       ${isActive
-//                         ? "border-b-[#0077f2] text-[#0077f2] font-semibold"
+//                         ? "border-b-[#D19C2A]  text-[#D19C2A]  font-semibold"
 //                         : "text-gray-900 dark:text-white"
 //                       }
-//                       hover:border-b-[#0077f2] hover:text-[#0077f2]`}
+//                       hover:border-b-[#D19C2A]  hover:text-[#D19C2A] `}
 //                     onClick={() => {
 //                       setMobileOpen(false);
 //                       setMobileDropdownOpen(null);
@@ -391,10 +391,10 @@ export default function Header() {
                     <span
                       className={`cursor-pointer px-2 py-1 inline-block border-b-2 transition duration-300
                       ${isActive
-                          ? "border-b-[#0077f2] text-[#0077f2] font-semibold"
+                          ? "border-b-[#D19C2A]  text-[#D19C2A]  font-semibold"
                           : "border-transparent text-gray-900"
                         }
-                      hover:text-[#0077f2] hover:border-b-[#0077f2]`}
+                      hover:text-[#D19C2A]  hover:border-b-[#D19C2A] `}
                     >
                       {label}
                     </span>
@@ -477,10 +477,10 @@ export default function Header() {
                   href={href}
                   className={`px-2 py-1 inline-block border-b-2 transition duration-300
                   ${isActive
-                      ? "border-b-[#0077f2] text-[#0077f2] font-semibold"
+                      ? "border-b-[#D19C2A]  text-[#D19C2A]  font-semibold"
                       : "border-transparent text-gray-900"
                     }
-                  hover:border-b-[#0077f2] hover:text-[#0077f2] hover:scale-105`}
+                  hover:border-b-[#D19C2A]  hover:text-[#D19C2A]  hover:scale-105`}
                 >
                   {label}
                 </Link>
@@ -495,7 +495,7 @@ export default function Header() {
             href="https://docs.google.com/forms/d/e/1FAIpQLSeagCrGF_wCuabJNupF9RR9Hb7i1kOQBC2ydPc38C0S2bFRBg/viewform"
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden md:inline-block text-white bg-blue-600 hover:bg-blue-700 rounded-lg text-sm px-5 py-2.5"
+            className="hidden md:inline-block text-white bg-[#D19C2A]  hover:bg-[#e2a624] rounded-lg text-sm px-5 py-2.5"
           >
             Become a Volunteer
           </a>

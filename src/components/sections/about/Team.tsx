@@ -94,7 +94,7 @@ export default function TeamSlider() {
   return (
     <section className="py-16 px-4 overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl text-center font-bold text-blue-900 mb-10 uppercase">
+        <h2 className="text-4xl md:text-5xl text-center font-bold text-[#037536] mb-10 uppercase">
           Meet Our Team
         </h2>
         <p className="text-center mb-3">

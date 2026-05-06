@@ -27,7 +27,7 @@ export default function DownloadPDF() {
           {reports.map((report, index) => (
             <div
               key={index}
-              className="flex flex-col items-center rounded-lg drop-shadow-md shadow-blue-500 p-4 bg-white hover:bg-gray-50 transition"
+              className="flex flex-col items-center rounded-lg drop-shadow-md shadow-[#D19C2A] p-4 bg-white hover:bg-gray-50 transition"
             >
               <div className="w-64 h-80 relative">
                 <Image
@@ -46,7 +46,7 @@ export default function DownloadPDF() {
                 href={report.pdf}
                 target="_blank"
                 download={report.title.replace(/\s+/g, '-') + '.pdf'}
-                className="bg-blue-600 hover:bg-blue-700 text-white mt-2 inline-block px-6 py-2 border border-blue-400 rounded transition"
+                className="bg-[#D19C2A]  hover:bg-[#D19C2A] text-white mt-2 inline-block px-6 py-2 border border-[#D19C2A] rounded transition"
               >
                 Download
               </Link>

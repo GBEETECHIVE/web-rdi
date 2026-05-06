@@ -11,7 +11,7 @@ export default function ImageGallery() {
   return (
     <section className="py-12 px-4">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-center text-blue-900 mb-10">
+        <h2 className="text-4xl font-bold text-center text-[#037536] mb-10">
           Our Gallery
         </h2>
 

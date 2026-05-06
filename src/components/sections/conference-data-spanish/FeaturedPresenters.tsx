@@ -91,7 +91,7 @@ const getInitials = (name: string) => {
 // Function to generate a background color based on name (consistent for same name)
 const getAvatarColor = (name: string) => {
   const colors = [
-    "bg-blue-100 text-blue-600",
+    "bg-[#D19C2A] text-[#D19C2A] ",
     "bg-green-100 text-green-600",
     "bg-purple-100 text-purple-600",
     "bg-pink-100 text-pink-600",
@@ -123,7 +123,7 @@ export default function FeaturedPresenters() {
     <section className="py-20 bg-gradient-to-b from-white to-blue-50">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold text-blue-900">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#037536]">
             Presentadores Destacados
           </h2>
           <p className="mt-4 text-gray-600">
@@ -143,7 +143,7 @@ export default function FeaturedPresenters() {
                 className="group rounded-2xl bg-white p-6 shadow-sm hover:shadow-md transition"
               >
                 <div className="flex items-start gap-4">
-                  <div className="relative h-14 w-14 rounded-full overflow-hidden ring-2 ring-blue-100 flex-shrink-0 flex items-center justify-center">
+                  <div className="relative h-14 w-14 rounded-full overflow-hidden ring-2 ring-[#D19C2A] flex-shrink-0 flex items-center justify-center">
                     {hasImage ? (
                       <Image
                         src={presenter.image}
@@ -160,7 +160,7 @@ export default function FeaturedPresenters() {
                     )}
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 group-hover:text-blue-600 transition">
+                    <h3 className="text-lg font-semibold text-gray-900 group-hover:text-[#D19C2A]  transition">
                       {presenter.name}
                     </h3>
                     <p className="mt-1 text-sm text-gray-600">{presenter.role}</p>

@@ -23,7 +23,7 @@ export default function KeyEvents() {
   return (
     <section className="py-12 px-4">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl text-center font-bold text-blue-900 mb-6 leading-tight">
+        <h2 className="text-4xl md:text-5xl text-center font-bold text-[#037536] mb-6 leading-tight">
           Key Events
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8">

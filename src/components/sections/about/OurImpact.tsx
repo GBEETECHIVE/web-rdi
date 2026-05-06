@@ -39,7 +39,7 @@ export default function OurImpact() {
         <div className="flex flex-col lg:flex-row gap-10 items-start">
           {/* Left Content */}
           <div className="w-full lg:w-1/2">
-            <h3 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6 leading-tight border-l-4 border-blue-800 pl-4">
+            <h3 className="text-4xl md:text-5xl font-bold text-[#037536] mb-6 leading-tight border-l-4 border-[#037536] pl-4">
               Our Impact
             </h3>
             <p className="text-gray-700 text-lg leading-relaxed">
@@ -120,7 +120,7 @@ export default function OurImpact() {
                   key={index}
                   onClick={() => setCurrent(index)}
                   className={`h-2 w-2 rounded-full transition-colors duration-300 ${
-                    index === current ? "bg-blue-600" : "bg-gray-300"
+                    index === current ? "bg-[#D19C2A] " : "bg-[#D19C2A5E]"
                   }`}
                 />
               ))}

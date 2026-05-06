@@ -13,7 +13,7 @@ export default function HeroConference() {
       <div className="relative mx-auto max-w-7xl px-4 py-18 sm:px-6 lg:px-8 text-center">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900">
           Cuidando a las Madres,{" "}
-          <span className="text-blue-600">Creando el Futuro</span>
+          <span className="text-[#D19C2A] ">Creando el Futuro</span>
         </h1>
         <p className="mt-6 text-lg sm:text-xl text-gray-900 max-w-3xl mx-auto">
           Una conferencia gratuita para futuros padres que apoyan la salud materna y
@@ -22,13 +22,13 @@ export default function HeroConference() {
         <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="https://forms.gle/r7udfwMAZACWenGp8"
-            className="rounded-xl bg-blue-600 px-8 py-3 text-white font-semibold hover:bg-blue-700 transition"
+            className="rounded-xl bg-[#D19C2A]  px-8 py-3 text-white font-semibold hover:bg-[#D19C2A] transition"
           >
             Registrarse (Inglés)
           </Link>
           <Link
             href="https://forms.gle/fxtH3L1T4rZj3vgm7"
-            className="rounded-xl border bg-blue-600 border-blue-600 px-8 py-3 text-white hover:bg-blue-700 font-semibold transition"
+            className="rounded-xl border bg-[#D19C2A]  border-[#D19C2A]  px-8 py-3 text-white hover:bg-[#D19C2A] font-semibold transition"
           >
             Registrarse (Español)
           </Link>

@@ -6,10 +6,10 @@ export default function WhereWeWork() {
       <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
         {/* Left Content */}
         <div className="w-full lg:w-1/2">
-          <h6 className="text-xl text-blue-700 font-semibold mb-4">
+          <h6 className="text-xl text-[#D19C2A] font-semibold mb-4">
             Where we work
           </h6>
-          <h4 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4 border-l-4 border-blue-800 pl-4 leading-tight">
+          <h4 className="text-4xl md:text-5xl font-bold text-[#037536] mb-4 border-l-4 border-[#037536] pl-4 leading-tight">
             Primarily focusing on Pakistan, Afghanistan, and the United States
           </h4>
           <p className="text-gray-700 text-lg leading-relaxed">

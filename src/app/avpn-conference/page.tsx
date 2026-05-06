@@ -17,7 +17,7 @@ const getInitials = (name: string) => {
 // Avatar color
 const getAvatarColor = (name: string) => {
     const colors = [
-        "bg-blue-100 text-blue-600",
+        "bg-[#D19C2A] text-[#D19C2A] ",
         "bg-green-100 text-green-600",
         "bg-purple-100 text-purple-600",
         "bg-pink-100 text-pink-600",
@@ -72,7 +72,7 @@ export default function HomePage() {
                         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
                             <h3 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900">
                                 5TH INTERNATIONAL CONFERENCE ON{" "}
-                                <span className="text-blue-600">EARLY CHILDHOOD DEVELOPMENT</span>
+                                <span className="text-[#D19C2A] ">EARLY CHILDHOOD DEVELOPMENT</span>
                             </h3>
 
                             <p className="mt-6 text-lg sm:text-xl text-gray-900 max-w-3xl mx-auto">
@@ -82,7 +82,7 @@ export default function HomePage() {
                             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
                                 <Link
                                     href="/registration"
-                                    className="rounded-xl bg-blue-600 px-8 py-3 text-white font-semibold hover:bg-blue-700 transition"
+                                    className="rounded-xl bg-[#D19C2A]  px-8 py-3 text-white font-semibold hover:bg-[#D19C2A] transition"
                                 >
                                     Register Now
                                 </Link>
@@ -134,7 +134,7 @@ export default function HomePage() {
                 <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                         <div className="text-center md:text-left">
-                            <h2 className="text-2xl sm:text-3xl font-semibold text-blue-900">
+                            <h2 className="text-2xl sm:text-3xl font-semibold text-[#037536]">
                                 Conference's Overview
                             </h2>
                             <p className="mt-4 text-gray-600">
@@ -150,7 +150,7 @@ export default function HomePage() {
                             </p>
                             <Link
                                 href="/about/background#goals"
-                                className="mt-8 inline-flex items-center justify-center rounded-xl bg-green-900 px-8 py-3 text-white font-medium hover:bg-blue-800 transition"
+                                className="mt-8 inline-flex items-center justify-center rounded-xl bg-green-900 px-8 py-3 text-white font-medium hover:bg-[#037536] transition"
                             >
                                 Read More
                             </Link>
@@ -173,7 +173,7 @@ export default function HomePage() {
 
                     {/* Header */}
                     <div className="text-center max-w-3xl mx-auto">
-                        <h2 className="text-3xl sm:text-4xl font-bold text-blue-900">
+                        <h2 className="text-3xl sm:text-4xl font-bold text-[#037536]">
                             Conference Sub-themes
                         </h2>
                         <p className="mt-4 text-gray-600">
@@ -227,7 +227,7 @@ export default function HomePage() {
                         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                             {/* Heading */}
                             <div className="text-center max-w-3xl mx-auto">
-                                <h2 className="text-3xl sm:text-4xl font-bold text-blue-900">
+                                <h2 className="text-3xl sm:text-4xl font-bold text-[#037536]">
                                     Panelists and Keynote Speakers
                                 </h2>
                                 <p className="mt-4 text-gray-600">
@@ -240,7 +240,7 @@ export default function HomePage() {
                                 <button
                                     onClick={() => setActiveDay("DAY-1")}
                                     className={`px-6 py-2 rounded-full font-semibold transition ${activeDay === "DAY-1"
-                                        ? "bg-blue-600 text-white"
+                                        ? "bg-[#D19C2A]  text-white"
                                         : "bg-white text-gray-700 border"
                                         }`}
                                 >
@@ -250,7 +250,7 @@ export default function HomePage() {
                                 <button
                                     onClick={() => setActiveDay("DAY-2")}
                                     className={`px-6 py-2 rounded-full font-semibold transition ${activeDay === "DAY-2"
-                                        ? "bg-blue-600 text-white"
+                                        ? "bg-[#D19C2A]  text-white"
                                         : "bg-white text-gray-700 border"
                                         }`}
                                 >
@@ -262,10 +262,10 @@ export default function HomePage() {
 
                                     {/* Plenary Title */}
                                     <div className="text-center mb-10">
-                                        <h3 className="text-2xl sm:text-3xl font-bold text-blue-800">
+                                        <h3 className="text-2xl sm:text-3xl font-bold text-[#037536]">
                                             {plenary.day} — {plenary.plenary}
                                         </h3>
-                                        <div className="w-16 h-1 bg-blue-500 mx-auto mt-3 rounded"></div>
+                                        <div className="w-16 h-1 bg-[#D19C2A] mx-auto mt-3 rounded"></div>
                                     </div>
 
                                     {/* Plenary role */}
@@ -305,10 +305,10 @@ export default function HomePage() {
                     
                     
                         <div className="text-center mb-10">
-                            <h3 className="text-2xl sm:text-3xl font-bold text-blue-800">
+                            <h3 className="text-2xl sm:text-3xl font-bold text-[#037536]">
                             DAY-2 — CONCURRENT SESSION: Early Learning Opportunities (concurrent)
                              </h3>
-                            <div className="w-16 h-1 bg-blue-500 mx-auto mt-3 rounded"></div>
+                            <div className="w-16 h-1 bg-[#D19C2A] mx-auto mt-3 rounded"></div>
                         </div>
                     {concurrentSpeakers.map((session, i) => (
                         <div key={i}>
@@ -345,7 +345,7 @@ export default function HomePage() {
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     {/* Heading */}
                     <div className="text-center max-w-7xl mx-auto">
-                        <h2 className="text-3xl sm:text-4xl font-bold text-blue-900">
+                        <h2 className="text-3xl sm:text-4xl font-bold text-[#037536]">
                             DAY-2 — Roundtable on the Operationalization of the National ECD Policy Framework with Provincial Ministers and Other Government Officials Facilitated by Key ECD
                         </h2>
 
@@ -382,7 +382,7 @@ export default function HomePage() {
             >
                 <div className="mx-auto max-w-5xl px-3 sm:px-6 lg:px-5">
                     <div className="text-center max-w-3xl mx-auto">
-                        <h2 className="text-3xl sm:text-4xl font-bold text-blue-900">
+                        <h2 className="text-3xl sm:text-4xl font-bold text-[#037536]">
                             Conference Core Committee
                         </h2>
                         <p className="mt-4 text-gray-600">
@@ -397,7 +397,7 @@ export default function HomePage() {
                         {speakers.map((speaker, i) => {
                             const hasImage = speaker.image && speaker.image !== "";
                             const initials = getInitials(speaker.name);
-                            const avatarColor = "bg-blue-200 text-blue-600";
+                            const avatarColor = "bg-[#D19C2A] text-[#D19C2A] ";
 
                             return (
                                 <div
@@ -407,7 +407,7 @@ export default function HomePage() {
                                     <div className="flex items-center gap-5">
 
                                         {/* Avatar */}
-                                        <div className="relative h-16 w-16 rounded-full overflow-hidden ring-2 ring-blue-100 flex-shrink-0 flex items-center justify-center">
+                                        <div className="relative h-16 w-16 rounded-full overflow-hidden ring-2 ring-[#D19C2A] flex-shrink-0 flex items-center justify-center">
                                             {hasImage ? (
                                                 <Image
                                                     src={speaker.image}
@@ -435,7 +435,7 @@ export default function HomePage() {
                                             <p className="text-gray-500 text-sm mb-1">
                                                 {speaker.role}
                                             </p>
-                                            <p className="text-blue-600 font-medium mt-1">
+                                            <p className="text-[#D19C2A]  font-medium mt-1">
                                                 {speaker.org}
                                             </p>
                                         </div>
@@ -456,10 +456,10 @@ export default function HomePage() {
             <section className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-14">
-                        <h2 className="text-3xl sm:text-4xl font-bold text-blue-900">
+                        <h2 className="text-3xl sm:text-4xl font-bold text-[#037536]">
                             Registrations
                         </h2>
-                        <div className="w-24 h-1 bg-blue-500 mx-auto mt-4 rounded"></div>
+                        <div className="w-24 h-1 bg-[#D19C2A] mx-auto mt-4 rounded"></div>
                     </div>
                     <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 
@@ -489,7 +489,7 @@ export default function HomePage() {
                                 theme: {
                                     bg: "bg-slate-100",
                                     border: "border-slate-200",
-                                    dateColor: "text-blue-600",
+                                    dateColor: "text-[#D19C2A] ",
                                 },
                                 fees: [
                                     "International Paper Presenter — USD 300",
@@ -557,7 +557,7 @@ export default function HomePage() {
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
 
                     <div className="text-center max-w-3xl mx-auto">
-                        <h2 className="text-3xl sm:text-4xl font-bold text-blue-900">
+                        <h2 className="text-3xl sm:text-4xl font-bold text-[#037536]">
                             Organizers
                         </h2>
                     </div>
@@ -592,7 +592,7 @@ export default function HomePage() {
                 <div className="text-center container mx-auto px-4 sm:px-6 lg:px-8">
 
                     <div className="max-w-3xl mx-auto">
-                        <h2 className="text-3xl sm:text-4xl font-bold text-blue-900">
+                        <h2 className="text-3xl sm:text-4xl font-bold text-[#037536]">
                             Impact Partners
                         </h2>
                     </div>
@@ -627,7 +627,7 @@ export default function HomePage() {
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
 
                     <div className="text-center max-w-3xl mx-auto">
-                        <h2 className="text-3xl sm:text-4xl font-bold text-blue-900">
+                        <h2 className="text-3xl sm:text-4xl font-bold text-[#037536]">
                             Collaboration Partners
                         </h2>
                     </div>
@@ -661,7 +661,7 @@ export default function HomePage() {
             <section className="py-12 sm:py-16 bg-white">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center max-w-3xl mx-auto">
-                        <h2 className="text-3xl sm:text-4xl font-bold text-blue-900">
+                        <h2 className="text-3xl sm:text-4xl font-bold text-[#037536]">
                             Knowledge Partners
                         </h2>
                     </div>
@@ -693,7 +693,7 @@ export default function HomePage() {
             <section className="py-12 sm:py-16 bg-white">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center max-w-3xl mx-auto">
-                        <h2 className="text-3xl sm:text-4xl font-bold text-blue-900">
+                        <h2 className="text-3xl sm:text-4xl font-bold text-[#037536]">
                             International Conference Alerts
                         </h2>
                     </div>
@@ -732,7 +732,7 @@ export default function HomePage() {
                     >
                         Submit Abstract Here
                     </Link>
-                    <p className="mt-6 text-gray-300">
+                    <p className="mt-6 text-[#D19C2A5E]">
                         Want to register your stall?{" "}
                         <Link href="/vendor-registration" className="underline">
                             Register Now

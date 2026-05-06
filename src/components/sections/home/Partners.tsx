@@ -69,7 +69,7 @@ export default function PartnerLogoSlider() {
   return (
     <section className="py-12 px-4 overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl text-center font-bold text-blue-900 mb-6 leading-tight">
+        <h2 className="text-4xl md:text-5xl text-center font-bold text-[#037536] mb-6 leading-tight">
           Our Partner Organizations
         </h2>
 

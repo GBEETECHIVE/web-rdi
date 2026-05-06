@@ -12,7 +12,7 @@ export default function Footer() {
             <ul className="space-y-3">
               {["Education", "Who we are", "Rupani Initiatives"].map((item, i) => (
                 <li key={i}>
-                  <Link href="#" className="hover:text-[#0077f2] transition-colors">
+                  <Link href="#" className="hover:text-[#D19C2A]  transition-colors">
                     {item}
                   </Link>
                 </li>
@@ -26,7 +26,7 @@ export default function Footer() {
             <ul className="space-y-3">
               {["Be a volunteer", "Volunteer List", "FAQ", "Terms of use", "Privacy policy"].map((item, i) => (
                 <li key={i}>
-                  <Link href="#" className="hover:text-[#0077f2] transition-colors">
+                  <Link href="#" className="hover:text-[#D19C2A]  transition-colors">
                     {item}
                   </Link>
                 </li>
@@ -39,7 +39,7 @@ export default function Footer() {
             <h3 className="text-sm font-bold text-gray-800 uppercase mb-4">Send Email</h3>
             <ul className="space-y-3 mb-8">
               <li>
-                <Link href="mailto:connect@rdi.world" className="hover:text-[#0077f2] transition-colors">
+                <Link href="mailto:connect@rdi.world" className="hover:text-[#D19C2A]  transition-colors">
                   connect@rdi.world
                 </Link>
               </li>
@@ -78,7 +78,7 @@ export default function Footer() {
                     rel="noopener noreferrer"
                     aria-label={label}
                   >
-                    <img src={icon} alt={label} className="w-9 h-9 rounded-full border-2 border-transparent hover:border-[#0077f2] transition hover:p-1" />
+                    <img src={icon} alt={label} className="w-9 h-9 rounded-full border-2 border-transparent hover:border-[#E8161F]  transition hover:p-1" />
                   </Link>
                 ))}
               </div>
@@ -90,48 +90,48 @@ export default function Footer() {
           {/* USA Office */}
           <div>
             <h3 className="text-sm font-bold text-gray-800 uppercase mb-2">USA OFFICE</h3>
-            <p className="hover:text-[#0077f2] transition-colors">
+            <p className="hover:text-[#D19C2A]  transition-colors">
               8303 Southwest Freeway, Suite 440, 
 Houston, TX 77074 USA
             </p>
-            <p className="mt-2 hover:text-[#0077f2] transition-colors">+1 713-777-5059</p>
+            <p className="mt-2 hover:text-[#D19C2A]  transition-colors">+1 713-777-5059</p>
           </div>
 
           {/* Pakistan Office */}
           <div>
             <h3 className="text-sm font-bold text-gray-800 uppercase mb-2">PAKISTAN OFFICE</h3>
-            <p className="hover:text-[#0077f2] transition-colors">
+            <p className="hover:text-[#D19C2A]  transition-colors">
              Naveed Shaheed Road, Zulfiqarabad, 
 Gilgit, Gilgit-Baltistan, Pakistan
             </p>
-            <p className="mt-2 hover:text-[#0077f2] transition-colors">+92-5811-459709</p>
+            <p className="mt-2 hover:text-[#D19C2A]  transition-colors">+92-5811-459709</p>
           </div>
 
           {/* Afghanistan Office */}
           <div>
             <h3 className="text-sm font-bold text-gray-800 uppercase mb-2">AFGHANISTAN OFFICE</h3>
-            <p className="hover:text-[#0077f2] transition-colors">
+            <p className="hover:text-[#D19C2A]  transition-colors">
               House #13, Street #5, Qilla-e-Fatullah, 
 Kabul, Afghanistan 
             </p>
-            <p className="mt-2 hover:text-[#0077f2] transition-colors">+937-962-91322</p>
+            <p className="mt-2 hover:text-[#D19C2A]  transition-colors">+937-962-91322</p>
           </div>
           <div>
             <h3 className="text-sm font-bold text-gray-800 uppercase mb-2">UAE OFFICE</h3>
-            <p className="hover:text-[#0077f2] transition-colors">
+            <p className="hover:text-[#D19C2A]  transition-colors">
               DD-14-116-012, WeWork - Hub71, 
 14 Floor, Al Khatem Tower, Adgm Square, 
 Al Maryah Island, Abu Dhabi, UAE
             </p>
-            <p className="mt-2 hover:text-[#0077f2] transition-colors">+971-56940-3192</p>
+            <p className="mt-2 hover:text-[#D19C2A]  transition-colors">+971-56940-3192</p>
           </div>
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-gray-300 pt-6">
+        <div className="border-t border-[#D19C2A5E] pt-6">
           <span className="block text-sm text-gray-600 text-center">
             © 2025{" "}
-            <Link href="https://yourdomain.com" className="hover:text-[#0077f2] transition-colors">
+            <Link href="https://yourdomain.com" className="hover:text-[#D19C2A]  transition-colors">
               Rupani Development Initiatives
             </Link>
             . All rights reserved.

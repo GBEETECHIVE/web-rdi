@@ -7,7 +7,7 @@ export default function HowWeWork() {
         {/* Heading & Text */}
         <div className="mb-10">
           <div className="flex items-center space-x-4 mb-4">
-            <h3 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6 leading-tight border-l-4 border-blue-800 pl-4">
+            <h3 className="text-4xl md:text-5xl font-bold text-[#037536] mb-6 leading-tight border-l-4 border-[#037536] pl-4">
               How we work
             </h3>
           </div>

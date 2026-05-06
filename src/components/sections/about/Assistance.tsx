@@ -17,7 +17,7 @@ export default function Assistance() {
     <section className="py-16 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Caption heading */}
-        <h3 className="text-4xl md:text-5xl font-bold text-blue-900 mb-12 leading-tight border-l-4 border-blue-800 pl-4">
+        <h3 className="text-4xl md:text-5xl font-bold text-[#037536] mb-12 leading-tight border-l-4 border-[#037536] pl-4">
           Ways in which we provide assistance
           <br />
           to our nation.

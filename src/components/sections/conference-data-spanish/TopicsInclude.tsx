@@ -5,7 +5,7 @@ export default function TopicsInclude() {
     <section className="py-20 bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-blue-900">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#037536]">
             Temas Incluidos
           </h2>
           <p className="mt-4 text-gray-600">

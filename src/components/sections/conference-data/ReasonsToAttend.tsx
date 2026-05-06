@@ -5,7 +5,7 @@ export default function ReasonsToAttend() {
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold text-blue-900">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#037536]">
             Additional Information & Reasons to Attend
           </h2>
           <p className="mt-4 text-gray-600">
@@ -172,7 +172,7 @@ export default function ReasonsToAttend() {
               className="group bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition"
             >
               <div className="flex items-center gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-[#D19C2A]  group-hover:bg-[#D19C2A]  group-hover:text-white transition">
                   {item.icon}
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900">

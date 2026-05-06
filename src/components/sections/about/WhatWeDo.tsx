@@ -7,7 +7,7 @@ export default function WhatWeDo() {
         {/* Responsive layout using flex-col for mobile and flex-row for lg */}
         <div className="flex flex-col lg:flex-row items-start gap-8">
           <div className="w-full lg:w-1/2">
-            <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6 leading-tight border-l-4 border-blue-800 pl-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#037536] mb-6 leading-tight border-l-4 border-[#037536] pl-4">
               We are working across the world
             </h2>
             <p className="text-gray-700 mb-6 leading-relaxed">

@@ -9,7 +9,7 @@ export default function QuestionsForConference() {
         <h2 className="text-3xl font-bold">
           ¿Preguntas o Deseas Colaborar?
         </h2>
-        <p className="mt-4 text-gray-300">
+        <p className="mt-4 text-[#D19C2A5E]">
           Contacta a Alejandra Posada, Directora – Salud Mental y Bienestar Holístico, Rupani Development Initiatives
         </p>
         <Link
@@ -19,7 +19,7 @@ export default function QuestionsForConference() {
         >
           Envíanos un Correo
         </Link>
-        <p className="mt-6 text-gray-300">
+        <p className="mt-6 text-[#D19C2A5E]">
           ¿Interesado en ser expositor?{" "}
           <Link href="https://forms.gle/zv48JLtDzGM6aNza8" className="underline">
             Regístrate aquí

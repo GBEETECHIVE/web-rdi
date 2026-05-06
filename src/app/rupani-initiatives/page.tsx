@@ -6,7 +6,7 @@ export default function RupaniInitiatives() {
     <>
       <section className="py-16 w-full">
         <div className="max-w-7xl mx-auto px-4">
-          <h3 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6 leading-tight text-center">
+          <h3 className="text-4xl md:text-5xl font-bold text-[#037536] mb-6 leading-tight text-center">
             Rupani Initiatives
           </h3>
 
@@ -53,7 +53,7 @@ export default function RupaniInitiatives() {
                 href="https://www.rupanifoundation.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition"
+                className="inline-block bg-[#D19C2A]  text-white px-5 py-2 rounded-lg hover:bg-[#D19C2A] transition"
               >
                 Explore More
               </a>
@@ -101,7 +101,7 @@ export default function RupaniInitiatives() {
                 href="https://www.apexnco.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition"
+                className="inline-block bg-[#D19C2A]  text-white px-5 py-2 rounded-lg hover:bg-[#D19C2A] transition"
               >
                 Explore More
               </a>

@@ -7,7 +7,7 @@ export default function AboutUs() {
         <div className="grid grid-cols-1 md:grid-cols-2 items-stretch gap-8">
           {/* Text Section */}
           <div className="flex flex-col justify-center">
-            <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6 leading-tight border-l-4 border-blue-800 pl-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#037536] mb-6 leading-tight border-l-4 border-[#037536] pl-4">
               Know about us
             </h2>
             <p className="text-gray-700">

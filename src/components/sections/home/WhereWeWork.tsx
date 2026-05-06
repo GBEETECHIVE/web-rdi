@@ -38,11 +38,11 @@ export default function WhereWeWork() {
         <div className="flex flex-col lg:flex-row gap-10 items-start">
           {/* Left Content */}
           <div className="w-full lg:w-1/2">
-            <h3 className="text-sm tracking-widest uppercase font-semibold text-blue-900 mb-3 border-l-4 border-blue-800 pl-4">
+            <h3 className="text-sm tracking-widest uppercase font-semibold text-[#037536] mb-3 border-l-4 border-[#037536] pl-4">
               Where We Work
             </h3>
 
-            <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6 leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#037536] mb-6 leading-tight">
               Our initiatives extend to
               <br />
               regions in need
@@ -119,7 +119,7 @@ export default function WhereWeWork() {
                   key={index}
                   onClick={() => setCurrent(index)}
                   className={`h-2 w-2 rounded-full transition-colors duration-300 ${
-                    index === current ? "bg-blue-600" : "bg-gray-300"
+                    index === current ? "bg-[#D19C2A] " : "bg-[#D19C2A5E]"
                   }`}
                 />
               ))}

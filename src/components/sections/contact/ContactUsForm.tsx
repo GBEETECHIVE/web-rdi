@@ -4,7 +4,7 @@ export default function ContactUs() {
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h3 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6 leading-tight text-center">
+          <h3 className="text-4xl md:text-5xl font-bold text-[#037536] mb-6 leading-tight text-center">
             Contact Us
           </h3>
         </div>
@@ -25,7 +25,7 @@ export default function ContactUs() {
                 type="text"
                 id="firstName"
                 placeholder="Bonnie"
-                className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full border border-[#D19C2A5E] rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#D19C2A]"
               />
             </div>
 
@@ -41,7 +41,7 @@ export default function ContactUs() {
                 type="text"
                 id="lastName"
                 placeholder="Green"
-                className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full border border-[#D19C2A5E] rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#D19C2A]"
               />
             </div>
 
@@ -58,7 +58,7 @@ export default function ContactUs() {
                 id="email"
                 required
                 placeholder="name@example.com"
-                className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full border border-[#D19C2A5E] rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#D19C2A]"
               />
             </div>
 
@@ -75,7 +75,7 @@ export default function ContactUs() {
                 id="phone"
                 required
                 placeholder="+12 345 6789"
-                className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full border border-[#D19C2A5E] rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#D19C2A]"
               />
             </div>
           </div>
@@ -92,7 +92,7 @@ export default function ContactUs() {
               type="text"
               id="subject"
               placeholder="Subject of your message"
-              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border border-[#D19C2A5E] rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#D19C2A]"
             />
           </div>
 
@@ -109,18 +109,18 @@ export default function ContactUs() {
               rows={5}
               required
               placeholder="Leave a comment..."
-              className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border border-[#D19C2A5E] rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#D19C2A]"
             ></textarea>
           </div>
 
           {/* Policy note */}
           <p className="text-sm text-gray-500 mt-2">
             By submitting this form you agree to our{" "}
-            <a href="#" className="text-blue-600 hover:underline">
+            <a href="#" className="text-[#D19C2A]  hover:underline">
               terms and conditions
             </a>{" "}
             and our{" "}
-            <a href="#" className="text-blue-600 hover:underline">
+            <a href="#" className="text-[#D19C2A]  hover:underline">
               privacy policy
             </a>
             , which explains how we may collect, use and disclose your personal
@@ -131,7 +131,7 @@ export default function ContactUs() {
           <div>
             <button
               type="submit"
-              className="bg-blue-700 hover:bg-blue-800 text-white font-medium text-sm px-6 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600"
+              className="bg-[#D19C2A] hover:bg-[#e1a82f]  text-white font-medium text-sm px-6 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#D19C2A] "
             >
               Send message
             </button>
