@@ -25,7 +25,7 @@ export default function ContactUs() {
                 type="text"
                 id="firstName"
                 placeholder="Bonnie"
-                className="w-full border border-[#D19C2A5E] rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#D19C2A]"
+                className="w-full border border-[#D19C2A5E] text-gray-700  rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#D19C2A]"
               />
             </div>
 
